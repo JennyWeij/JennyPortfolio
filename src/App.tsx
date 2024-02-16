@@ -128,6 +128,7 @@ function App() {
           </Box>
         </Box>
       </Box>
+
       {/* Third section  */}
       <Box
         style={{
@@ -149,6 +150,35 @@ function App() {
         >
           <Text fontSize={85} fontFamily="Bodoni Moda" marginBottom="-30">
             STACK & EXPERIENCE
+          </Text>
+          <Text fontSize={30} fontFamily="Bodoni Moda">
+            Studying Front End Developer <br />
+            Graduating May 2024
+          </Text>
+        </Box>
+      </Box>
+
+      {/* Fourth section  */}
+      <Box
+        style={{
+          height: "100vh",
+          background: "#FEFEFE",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {/* Project box */}
+        <Box
+          style={{
+            textAlign: "center",
+            justifyItems: "center",
+            color: "black",
+            marginTop: -80,
+          }}
+        >
+          <Text fontSize={85} fontFamily="Bodoni Moda" marginBottom="-30">
+            PROJECTS
           </Text>
           <Text fontSize={30} fontFamily="Bodoni Moda">
             Studying Front End Developer <br />
