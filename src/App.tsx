@@ -1,98 +1,96 @@
-import { Box, Container, Image, Text } from "@chakra-ui/react";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 function App() {
   return (
     <Container>
       <Box
-        style={{
-          height: "100vh",
-          background: "#2E2C31",
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          flexDirection: "column", // Added to stack content vertically
+          flexDirection: "column",
+          height: "100vh",
+          background: "#2E2C31",
+          marginTop: "-60px",
+          textAlign: "center",
+          color: "white",
         }}
       >
         {/* Text box */}
-        <Box
-          style={{
-            textAlign: "center",
-            justifyItems: "center",
-            color: "white",
-            marginTop: -80,
-          }}
-        >
-          <Text fontSize={85} fontFamily="Bodoni Moda" marginBottom="-30">
+        <Box sx={{ marginTop: "-80px" }}>
+          <Typography variant="h1" marginBottom="-30">
             JENNY WEIJLAND
-          </Text>
-          <Text fontSize={30} fontFamily="Bodoni Moda">
+          </Typography>
+          <Typography variant="h5">
             Studying Front End Developer <br />
             Graduating May 2024
-          </Text>
+          </Typography>
         </Box>
 
         {/* Image box */}
         <Box
-          marginTop="-60"
-          height="400px"
-          width="400px"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
+          sx={{
+            marginTop: "-60px",
+            height: "400px",
+            width: "400px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           <Box
-            boxSize="sm"
-            // boxShadow="15px 10px 10px rgba(255, 255, 255, 0.563)"
-          >
-            <Image
-              boxSize="300px"
-              objectFit="cover"
-              src="../public/cv.jpg"
-              alt="Picture of Jenny"
-            />
-          </Box>
+            component="img"
+            src="/cv.jpg"
+            alt="Picture of Jenny"
+            width="300px"
+            height="300px"
+            sx={{ borderRadius: "50%" }}
+          />
         </Box>
 
         {/* Second Text box */}
         <Box
-          style={{
-            background: "#2E2C31", // Same background color as the image box
-            padding: "20px", // Added padding for spacing
+          sx={{
+            background: "#2E2C31",
+            padding: "20px",
             textAlign: "center",
             justifyItems: "center",
           }}
         >
-          <Text fontSize={20} color="white">
+          <Typography variant="body1">
             Första gången jag stötte på kod var på gymnasiet. Det var en häftig
             känsla att kunna skapa något med hjälp av ett helt nytt språk.
             <br /> Att ha en tom sida framför sig för att se den växa och bli en
             färdig webbsida.
-          </Text>
+          </Typography>
         </Box>
       </Box>
 
       {/* Second section  */}
       <Box
-        style={{
-          height: "100vh",
-          background: "#9998A0",
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          height: "100vh",
+          background: "#9998A0",
         }}
       >
         <Box
-          style={{
+          sx={{
             display: "flex",
             alignItems: "center",
-            maxWidth: "80%", // Limit the width of the content
+            textAlign: "start",
+            maxWidth: "80%",
           }}
         >
-          <Text
-            fontSize={20}
+          <Typography variant="h1">ABOUT ME</Typography>
+          <Typography
+            variant="body1"
             color="white"
-            fontFamily="Bodoni Moda"
-            style={{ marginRight: "20px" }} // Add margin between text and additional box
+            sx={{ marginRight: "20px" }}
           >
             På frågan om den här dalkullan kan hantera stress, olika typer av
             människor, strukturera, planera, genomföra, så är svaret ett
@@ -104,10 +102,10 @@ function App() {
             arbetsplats och vad jag behöver för att trivas och vilja stanna
             kvar.Jag är nyfiken på teknologi och dess potential att driva
             positiv förändring.
-          </Text>
+          </Typography>
           {/* Additional box to the right */}
           <Box
-            style={{
+            sx={{
               width: "200px",
               height: "200px",
               background: "white",
@@ -115,76 +113,88 @@ function App() {
             }}
           >
             <Box
-              boxSize="sm"
-              // boxShadow="15px 10px 10px rgba(255, 255, 255, 0.563)"
-            >
-              <Image
-                boxSize="300px"
-                objectFit="cover"
-                src="../public/cv.jpg"
-                alt="Picture of Jenny"
-              />
-            </Box>
+              component="img"
+              src="/cv.jpg"
+              alt="Picture of Jenny"
+              width="300px"
+              height="300px"
+              sx={{ borderRadius: "50%" }}
+            />
           </Box>
         </Box>
       </Box>
 
       {/* Third section  */}
       <Box
-        style={{
-          height: "100vh",
-          background: "#FAECE3",
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          height: "100vh",
+          background: "#FAECE3",
         }}
       >
         {/* Stack box */}
         <Box
-          style={{
-            textAlign: "center",
-            justifyItems: "center",
+          sx={{
+            textAlign: "start",
+            justifyItems: "start",
             color: "black",
-            marginTop: -80,
+            marginTop: "-80px",
           }}
         >
-          <Text fontSize={85} fontFamily="Bodoni Moda" marginBottom="-30">
+          <Typography variant="h1" marginBottom="-30">
             STACK & EXPERIENCE
-          </Text>
-          <Text fontSize={30} fontFamily="Bodoni Moda">
+          </Typography>
+          <Typography variant="h5">
             Studying Front End Developer <br />
             Graduating May 2024
-          </Text>
+          </Typography>
         </Box>
       </Box>
 
       {/* Fourth section  */}
       <Box
-        style={{
-          height: "100vh",
-          background: "#FEFEFE",
+        sx={{
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          height: "100vh",
+          background: "#FEFEFE",
         }}
       >
         {/* Project box */}
         <Box
-          style={{
+          sx={{
             textAlign: "center",
             justifyItems: "center",
             color: "black",
-            marginTop: -80,
+            marginTop: "-80px",
           }}
         >
-          <Text fontSize={85} fontFamily="Bodoni Moda" marginBottom="-30">
+          <Typography variant="h1" marginBottom="-30">
             PROJECTS
-          </Text>
-          <Text fontSize={30} fontFamily="Bodoni Moda">
+          </Typography>
+          <Typography variant="h5">
             Studying Front End Developer <br />
             Graduating May 2024
-          </Text>
+          </Typography>
         </Box>
+
+        {/* Grid containing cards */}
+        {/* <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList> */}
       </Box>
     </Container>
   );
