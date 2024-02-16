@@ -1,38 +1,49 @@
-import { Box, Container, Flex, Image } from "@chakra-ui/react";
+import { Box, Container, Image, Text } from "@chakra-ui/react";
 
 function App() {
   return (
     <Container>
-      <Flex
+      <Box
         style={{
           height: "100vh",
-          background:
-            "linear-gradient(151deg, rgba(34,72,112,1) 43%, rgba(68,207,203,1) 100%)",
+          background: "#2E2C31",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
-        align="center"
-        justify="flex-end"
       >
-        <Box
-          style={{
-            height: "400px",
-            width: "400px",
-            marginRight: "10%",
-            backgroundColor: "#224870",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Box boxSize="sm">
-            <Image
-              boxSize="280px"
-              objectFit="cover"
-              src="../public/cv.jpg"
-              alt="Picture of Jenny"
-            />
+        <Box>
+          {/* Text box */}
+          <Box textAlign="center" justifyItems="center" color="white">
+            <Text fontSize={60}>Jenny Weijland</Text>
+            <Text fontSize={40}>
+              Studying Front End Developer <br />
+              Graduating May 2024
+            </Text>
+          </Box>
+
+          {/* Image box */}
+          <Box
+            height="400px"
+            width="400px"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box
+              boxSize="sm"
+              // boxShadow="15px 10px 10px rgba(255, 255, 255, 0.563)"
+            >
+              <Image
+                boxSize="300px"
+                objectFit="cover"
+                src="../public/cv.jpg"
+                alt="Picture of Jenny"
+              />
+            </Box>
           </Box>
         </Box>
-      </Flex>
+      </Box>
     </Container>
   );
 }
