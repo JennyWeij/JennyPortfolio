@@ -1,16 +1,25 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 
 function App() {
   return (
-    <Box
+    <Flex
       style={{
-        margin: 0,
-        padding: 0,
         height: "100vh",
         background:
           "linear-gradient(151deg, rgba(34,72,112,1) 43%, rgba(68,207,203,1) 100%)",
       }}
-    ></Box>
+      align="center"
+      justify="flex-end"
+    >
+      <Box
+        style={{
+          height: "400px",
+          width: "400px",
+          marginRight: "150px",
+          backgroundColor: "#224870",
+        }}
+      ></Box>
+    </Flex>
   );
 }
 
