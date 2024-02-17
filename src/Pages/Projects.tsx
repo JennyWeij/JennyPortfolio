@@ -8,7 +8,7 @@ function Projects() {
   const projects = [
     {
       title: "Travel Planner (app)",
-      imagePath: "/public/images/TravelPlanner.jpg",
+      imagePath: "/public/images/TravelPlannerapp.jpg.png",
     },
     { title: "Binding Blooms", imagePath: "/public/images/BindingBlooms.png" },
     { title: "Star Bomb", imagePath: "/public/images/StarBomb.png" },
@@ -54,7 +54,7 @@ function Projects() {
                 <img
                   src={project.imagePath} // Use the actual image path from the project object
                   alt={project.title} // Use the actual title from the project object
-                  style={{ maxWidth: "300px", height: "200px" }} // Ensure image is responsive
+                  style={{ maxWidth: "auto", height: "200px", margin: 10 }} // Ensure image is responsive
                 />
                 <Typography variant="h5" mt="10px">
                   {project.title}
