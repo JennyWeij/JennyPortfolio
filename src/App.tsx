@@ -52,11 +52,11 @@ function App() {
         >
           <Box
             component="img"
-            src="/cv.jpg"
+            src="/public/images/cv.jpg"
             alt="Picture of Jenny"
             width="300px"
             height="300px"
-            sx={{ borderRadius: "50%" }}
+            // sx={{ borderRadius: "50%" }}
           />
         </Box>
 
@@ -102,7 +102,7 @@ function App() {
           }}
         >
           <Typography
-            variant="h1"
+            fontSize="150px"
             fontFamily="Cormorant Garamond, serif"
             fontWeight="300"
             fontStyle="normal"
@@ -134,16 +134,14 @@ function App() {
               width: "200px",
               height: "200px",
               background: "white",
-              borderRadius: "10px",
             }}
           >
             <Box
               component="img"
-              src="/cv.jpg"
+              src="/public/images/cv.jpg"
               alt="Picture of Jenny"
               width="300px"
               height="300px"
-              sx={{ borderRadius: "50%" }}
             />
           </Box>
         </Box>
@@ -169,7 +167,7 @@ function App() {
           }}
         >
           <Typography
-            variant="h1"
+            fontSize="100px"
             marginBottom="-30"
             fontFamily="Cormorant Garamond, serif"
             fontWeight="300"
@@ -205,7 +203,7 @@ function App() {
           }}
         >
           <Typography
-            variant="h1"
+            fontSize="150px"
             marginBottom="-30"
             fontFamily="Cormorant Garamond, serif"
             fontWeight="300"
