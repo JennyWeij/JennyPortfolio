@@ -6,10 +6,13 @@ import Typography from "@mui/material/Typography";
 
 function Projects() {
   const projects = [
-    { title: "Travel Planner", imagePath: "/public/images/TravelPlanner.jpg" },
+    {
+      title: "Travel Planner (app)",
+      imagePath: "/public/images/TravelPlanner.jpg",
+    },
     { title: "Binding Blooms", imagePath: "/public/images/BindingBlooms.png" },
     { title: "Star Bomb", imagePath: "/public/images/StarBomb.png" },
-    // { title: "Binding Blooms", imagePath: "/public/images/BindingBlooms.png" },
+    { title: "PlanetEn", imagePath: "/public/images/PlanetEn.png" },
     // Add more project objects as needed
   ];
 
@@ -51,7 +54,7 @@ function Projects() {
                 <img
                   src={project.imagePath} // Use the actual image path from the project object
                   alt={project.title} // Use the actual title from the project object
-                  style={{ maxWidth: "100%", height: "auto" }} // Ensure image is responsive
+                  style={{ maxWidth: "300px", height: "200px" }} // Ensure image is responsive
                 />
                 <Typography variant="h5" mt="10px">
                   {project.title}
