@@ -1,10 +1,9 @@
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
 function App() {
   return (
-    <Container>
+    <Box>
       <Box
         sx={{
           display: "flex",
@@ -13,17 +12,28 @@ function App() {
           flexDirection: "column",
           height: "100vh",
           background: "#2E2C31",
-          marginTop: "-60px",
+          // marginTop: "-60px",
           textAlign: "center",
           color: "white",
         }}
       >
         {/* Text box */}
         <Box sx={{ marginTop: "-80px" }}>
-          <Typography variant="h1" marginBottom="-30">
+          <Typography
+            variant="h1"
+            // marginBottom="-30"
+            fontFamily="Cormorant Garamond, serif"
+            fontWeight="300"
+            fontStyle="normal"
+          >
             JENNY WEIJLAND
           </Typography>
-          <Typography variant="h5">
+          <Typography
+            variant="h5"
+            fontFamily="Cormorant Garamond, serif"
+            fontWeight="300"
+            fontStyle="normal"
+          >
             Studying Front End Developer <br />
             Graduating May 2024
           </Typography>
@@ -32,7 +42,7 @@ function App() {
         {/* Image box */}
         <Box
           sx={{
-            marginTop: "-60px",
+            // marginTop: "-60px",
             height: "400px",
             width: "400px",
             display: "flex",
@@ -59,7 +69,12 @@ function App() {
             justifyItems: "center",
           }}
         >
-          <Typography variant="body1">
+          <Typography
+            variant="body1"
+            fontFamily="Cormorant Garamond, serif"
+            fontWeight="300"
+            fontStyle="normal"
+          >
             Första gången jag stötte på kod var på gymnasiet. Det var en häftig
             känsla att kunna skapa något med hjälp av ett helt nytt språk.
             <br /> Att ha en tom sida framför sig för att se den växa och bli en
@@ -86,10 +101,20 @@ function App() {
             maxWidth: "80%",
           }}
         >
-          <Typography variant="h1">ABOUT ME</Typography>
+          <Typography
+            variant="h1"
+            fontFamily="Cormorant Garamond, serif"
+            fontWeight="300"
+            fontStyle="normal"
+          >
+            ABOUT ME
+          </Typography>
           <Typography
             variant="body1"
             color="white"
+            fontFamily="Cormorant Garamond, serif"
+            fontWeight="300"
+            fontStyle="normal"
             sx={{ marginRight: "20px" }}
           >
             På frågan om den här dalkullan kan hantera stress, olika typer av
@@ -143,7 +168,13 @@ function App() {
             marginTop: "-80px",
           }}
         >
-          <Typography variant="h1" marginBottom="-30">
+          <Typography
+            variant="h1"
+            marginBottom="-30"
+            fontFamily="Cormorant Garamond, serif"
+            fontWeight="300"
+            fontStyle="normal"
+          >
             STACK & EXPERIENCE
           </Typography>
           <Typography variant="h5">
@@ -173,7 +204,13 @@ function App() {
             marginTop: "-80px",
           }}
         >
-          <Typography variant="h1" marginBottom="-30">
+          <Typography
+            variant="h1"
+            marginBottom="-30"
+            fontFamily="Cormorant Garamond, serif"
+            fontWeight="300"
+            fontStyle="normal"
+          >
             PROJECTS
           </Typography>
           <Typography variant="h5">
@@ -196,7 +233,7 @@ function App() {
           ))}
         </ImageList> */}
       </Box>
-    </Container>
+    </Box>
   );
 }
 
