@@ -3,26 +3,31 @@ import Typography from "@mui/material/Typography";
 
 function AboutMe() {
   return (
-    <Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", sm: "column", md: "row" }, // Column layout for small screens, row layout for medium screens and above
+      }}
+    >
       <Box
         sx={{
+          flex: "1",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh",
           background: "#9998A0",
         }}
       >
         <Box
           sx={{
             display: "flex",
-            alignItems: "center",
-            textAlign: "start",
+            flexDirection: "column", // Always use column layout
+            alignItems: "start",
             maxWidth: "80%",
           }}
         >
           <Typography
-            fontSize="150px"
+            variant="h2"
             fontFamily="Cormorant Garamond, serif"
             fontWeight="300"
             fontStyle="normal"
@@ -35,7 +40,7 @@ function AboutMe() {
             fontFamily="Cormorant Garamond, serif"
             fontWeight="300"
             fontStyle="normal"
-            sx={{ marginRight: "20px" }}
+            mt="20px"
           >
             På frågan om den här dalkullan kan hantera stress, olika typer av
             människor, strukturera, planera, genomföra, så är svaret ett
@@ -48,22 +53,34 @@ function AboutMe() {
             kvar.Jag är nyfiken på teknologi och dess potential att driva
             positiv förändring.
           </Typography>
-          {/* Additional box to the right */}
-          <Box
-            sx={{
-              width: "200px",
-              height: "200px",
-              background: "white",
-            }}
-          >
-            <Box
-              component="img"
-              src="/public/images/cv.jpg"
-              alt="Picture of Jenny"
-              width="300px"
-              height="300px"
-            />
-          </Box>
+        </Box>
+      </Box>
+
+      {/* Image box */}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          mt: { xs: "20px", md: "0" }, // Margin top for smaller screens
+        }}
+      >
+        <Box
+          sx={{
+            width: { xs: "200px", md: "300px" },
+            height: { xs: "200px", md: "300px" },
+            background: "white",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src="/public/images/cv.jpg"
+            alt="Picture of Jenny"
+            width="100%"
+            height="100%"
+          />
         </Box>
       </Box>
     </Box>
