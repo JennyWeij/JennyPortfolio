@@ -19,17 +19,17 @@ function Experience() {
             textAlign: "start",
             justifyItems: "start",
             color: "black",
-            marginTop: "-80px",
           }}
         >
           <Typography
-            fontSize="100px"
-            marginBottom="-30"
-            fontFamily="Cormorant Garamond, serif"
-            fontWeight="300"
-            fontStyle="normal"
+            sx={{
+              fontSize: { xs: "40px", md: "100px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "300",
+              fontStyle: "normal",
+            }}
           >
-            STACK & EXPERIENCE
+            TECHNICAL / <br /> WORK EXPERIENCE
           </Typography>
           <Typography variant="h5">
             Studying Front End Developer <br />

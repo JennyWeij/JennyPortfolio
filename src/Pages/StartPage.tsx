@@ -12,7 +12,6 @@ function StartPage() {
           flexDirection: "column",
           height: "100vh",
           background: "#2E2C31",
-          // marginTop: "-60px",
           textAlign: "center",
           color: "white",
         }}
@@ -20,19 +19,22 @@ function StartPage() {
         {/* Text box */}
         <Box sx={{ marginTop: "-80px" }}>
           <Typography
-            variant="h1"
-            // marginBottom="-30"
-            fontFamily="Cormorant Garamond, serif"
-            fontWeight="300"
-            fontStyle="normal"
+            sx={{
+              fontSize: { xs: "60px", md: "100px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "300",
+              fontStyle: "normal",
+            }}
           >
             JENNY WEIJLAND
           </Typography>
           <Typography
-            variant="h5"
-            fontFamily="Cormorant Garamond, serif"
-            fontWeight="300"
-            fontStyle="normal"
+            sx={{
+              fontSize: { xs: "20px", md: "50px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "300",
+              fontStyle: "normal",
+            }}
           >
             Studying Front End Developer <br />
             Graduating May 2024
@@ -42,7 +44,6 @@ function StartPage() {
         {/* Image box */}
         <Box
           sx={{
-            // marginTop: "-60px",
             height: "400px",
             width: "400px",
             display: "flex",
@@ -52,7 +53,7 @@ function StartPage() {
         >
           <Box
             component="img"
-            src="/public/images/cv.jpg"
+            src="/images/cv.jpg"
             alt="Picture of Jenny"
             width="300px"
             height="300px"
