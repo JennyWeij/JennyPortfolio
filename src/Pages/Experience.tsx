@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
@@ -55,7 +56,7 @@ function Experience() {
             sx={{
               fontSize: { xs: "20px", md: "30px" },
               fontFamily: "Cormorant Garamond, serif",
-              fontWeight: "300",
+              fontWeight: "bold",
               fontStyle: "normal",
             }}
           >
@@ -76,7 +77,7 @@ function Experience() {
             sx={{
               fontSize: { xs: "20px", md: "30px" },
               fontFamily: "Cormorant Garamond, serif",
-              fontWeight: "300",
+              fontWeight: "bold",
               fontStyle: "normal",
             }}
           >
@@ -89,7 +90,17 @@ function Experience() {
             }}
           >
             I have worked as an administrative assistans at Chalmers University
-            of Technology
+            of Technology, Sales Coordinator For a full list of my previous work
+            experiences, please visit my{" "}
+            <Link
+              underline="none"
+              color="black"
+              fontWeight="bold"
+              href="https://www.linkedin.com/in/jenny-weijland-frontend/"
+            >
+              LinkedIn
+            </Link>
+            .
           </Typography>
         </Box>
       </Box>
