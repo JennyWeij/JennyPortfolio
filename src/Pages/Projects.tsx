@@ -10,10 +10,23 @@ function Projects() {
     {
       title: "Travel Planner (app)",
       imagePath: "/public/images/TravelPlannerapp.jpg.png",
+      githubLink: "https://github.com/JennyWeij/TravelApp",
     },
-    { title: "Binding Blooms", imagePath: "/public/images/BindingBlooms.png" },
-    { title: "Star Bomb", imagePath: "/public/images/StarBomb.png" },
-    { title: "PlanetEn", imagePath: "/public/images/PlanetEn.png" },
+    {
+      title: "Binding Blooms",
+      imagePath: "/public/images/BindingBlooms.png",
+      githubLink: "https://github.com/JennyWeij/BindingBlooms",
+    },
+    {
+      title: "Star Bomb",
+      imagePath: "/public/images/StarBomb.png",
+      githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
+    },
+    {
+      title: "PlanetEn",
+      imagePath: "/public/images/PlanetEn.png",
+      githubLink: "https://github.com/JennyWeij/PlanetEn-Javascript",
+    },
     // Add more project objects as needed
   ];
 
@@ -73,7 +86,13 @@ function Projects() {
                   <Typography variant="h5" mt="10px">
                     {project.title}
                   </Typography>
-                  <GitHubIcon />
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GitHubIcon />
+                  </a>
                 </Box>
               </CardContent>
             </Card>
