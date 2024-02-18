@@ -9,21 +9,38 @@ function Projects() {
   const projects = [
     {
       title: "Travel Planner (app)",
+      description: "",
       imagePath: "/images/TravelPlannerapp.jpg.png",
       githubLink: "https://github.com/JennyWeij/TravelApp",
     },
     {
       title: "Binding Blooms",
+      description: "",
       imagePath: "/images/BindingBlooms.png",
       githubLink: "https://github.com/JennyWeij/BindingBlooms",
     },
     {
+      title: "Chatropolis",
+      description: "",
+      imagePath: "/images/chatropolis.png",
+      githubLink: "https://github.com/JennyWeij/project-socket-chat",
+    },
+    {
+      title: "ChitChat",
+      description: "",
+      imagePath: "/images/chitchat.png",
+      githubLink:
+        "https://github.com/plugga-tech/react-express-user-content-ts-jenny-madde-jenny",
+    },
+    {
       title: "PlanetEn",
+      description: "",
       imagePath: "/images/PlanetEn.png",
       githubLink: "https://github.com/JennyWeij/PlanetEn-Javascript",
     },
     {
       title: "Star Bomb",
+      description: "",
       imagePath: "/images/StarBomb.png",
       githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
     },
