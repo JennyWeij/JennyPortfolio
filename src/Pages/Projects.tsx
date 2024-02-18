@@ -9,13 +9,15 @@ function Projects() {
   const projects = [
     {
       title: "Travel Planner (app)",
-      description: "",
+      description:
+        "React Native app Travel Planner, made together with Madeleine Gustafsson. Our final project in school.",
       imagePath: "/images/TravelPlannerapp.jpg.png",
       githubLink: "https://github.com/JennyWeij/TravelApp",
     },
     {
       title: "Binding Blooms",
-      description: "",
+      description:
+        "My project from the graphic design course where we were asked to create a graphic profile, a logo and a website. I made up the company Binding Blooms.",
       imagePath: "/images/BindingBlooms.png",
       githubLink: "https://github.com/JennyWeij/BindingBlooms",
     },
@@ -40,7 +42,8 @@ function Projects() {
     },
     {
       title: "Star Bomb",
-      description: "",
+      description:
+        "Final project in the JavaScript basic course. The task was to create a original game and Star Bomb is our result of that final project.",
       imagePath: "/images/StarBomb.png",
       githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
     },
