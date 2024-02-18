@@ -1,3 +1,4 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -49,16 +50,31 @@ function Projects() {
             key={project.title}
           >
             {/* Adjust the size of the Grid item based on your design */}
-            <Card sx={{ height: "100%" }}>
-              <CardContent>
+            <Card
+              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+            >
+              <CardContent style={{ flexGrow: 1 }}>
                 <img
                   src={project.imagePath} // Use the actual image path from the project object
                   alt={project.title} // Use the actual title from the project object
-                  style={{ maxWidth: "auto", height: "200px", margin: 10 }} // Ensure image is responsive
+                  style={{
+                    maxWidth: "auto",
+                    height: "200px",
+                    margin: "10px auto",
+                  }} // Ensure image is responsive
                 />
-                <Typography variant="h5" mt="10px">
-                  {project.title}
-                </Typography>
+                <Box
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Typography variant="h5" mt="10px">
+                    {project.title}
+                  </Typography>
+                  <GitHubIcon />
+                </Box>
               </CardContent>
             </Card>
           </Grid>
