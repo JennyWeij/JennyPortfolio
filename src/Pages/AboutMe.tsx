@@ -1,3 +1,7 @@
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
@@ -60,6 +64,51 @@ function AboutMe() {
             positive change. I always strive to become better, faster and to do
             a good job. I look forward to gaining a lot of trust and living up
             to the expectations set for me.
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "20px", md: "30px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "bold",
+              fontStyle: "normal",
+            }}
+          >
+            CONTACT
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "20px", md: "30px" },
+              fontFamily: "Cormorant Garamond, serif",
+              mb: "15px",
+            }}
+          >
+            <Link
+              underline="none"
+              color="black"
+              href="mailto:jennyweij@outlook.com"
+              target="_blank"
+            >
+              <EmailIcon />
+              jennyweij@outlook.com |
+            </Link>
+            <Link
+              underline="none"
+              color="black"
+              href="https://www.linkedin.com/in/jenny-weijland-frontend/"
+              target="_blank"
+            >
+              <LinkedInIcon />
+              LinkedIn
+            </Link>{" "}
+            |{" "}
+            <Link
+              underline="none"
+              color="black"
+              href="https://github.com/JennyWeij"
+              target="_blank"
+            >
+              <GitHubIcon /> GitHub
+            </Link>
           </Typography>
         </Box>
       </Box>
