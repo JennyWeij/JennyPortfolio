@@ -18,14 +18,14 @@ function Projects() {
       githubLink: "https://github.com/JennyWeij/BindingBlooms",
     },
     {
-      title: "Star Bomb",
-      imagePath: "/images/StarBomb.png",
-      githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
-    },
-    {
       title: "PlanetEn",
       imagePath: "/images/PlanetEn.png",
       githubLink: "https://github.com/JennyWeij/PlanetEn-Javascript",
+    },
+    {
+      title: "Star Bomb",
+      imagePath: "/images/StarBomb.png",
+      githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
     },
   ];
 
@@ -66,13 +66,13 @@ function Projects() {
             <Card
               sx={{ height: "100%", display: "flex", flexDirection: "column" }}
             >
-              <CardContent style={{ flexGrow: 1 }}>
+              <CardContent>
                 <img
                   src={project.imagePath}
                   alt={project.title}
                   style={{
-                    maxWidth: "auto",
-                    height: "200px",
+                    maxWidth: "100%", // Ensure the image fits within the card
+                    height: "auto", // Maintain aspect ratio
                     margin: "10px auto",
                   }}
                 />
@@ -83,7 +83,11 @@ function Projects() {
                     justifyContent: "space-between",
                   }}
                 >
-                  <Typography variant="h5" mt="10px">
+                  <Typography
+                    variant="h5"
+                    mt="10px"
+                    fontFamily="Cormorant Garamond, serif"
+                  >
                     {project.title}
                   </Typography>
                   <a

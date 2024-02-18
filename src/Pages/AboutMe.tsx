@@ -28,6 +28,7 @@ function AboutMe() {
             flexDirection: "column",
             alignItems: "start",
             maxWidth: "80%",
+            mb: "30px",
           }}
         >
           <Typography
