@@ -27,7 +27,6 @@ function Projects() {
       imagePath: "/images/PlanetEn.png",
       githubLink: "https://github.com/JennyWeij/PlanetEn-Javascript",
     },
-    // Add more project objects as needed
   ];
 
   return (
@@ -35,10 +34,9 @@ function Projects() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        justifyContent: "flex-start",
         background: "#FEFEFE",
-        padding: "20px", // Add padding to provide some spacing around the cards
+        padding: "20px",
       }}
     >
       <Typography
@@ -47,6 +45,7 @@ function Projects() {
           fontFamily: "Cormorant Garamond, serif",
           fontWeight: "300",
           fontStyle: "normal",
+          ml: "3%",
         }}
       >
         PROJECTS
@@ -69,13 +68,13 @@ function Projects() {
             >
               <CardContent style={{ flexGrow: 1 }}>
                 <img
-                  src={project.imagePath} // Use the actual image path from the project object
-                  alt={project.title} // Use the actual title from the project object
+                  src={project.imagePath}
+                  alt={project.title}
                   style={{
                     maxWidth: "auto",
                     height: "200px",
                     margin: "10px auto",
-                  }} // Ensure image is responsive
+                  }}
                 />
                 <Box
                   style={{

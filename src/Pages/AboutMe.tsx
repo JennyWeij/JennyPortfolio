@@ -6,7 +6,7 @@ function AboutMe() {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", sm: "column", md: "row" }, // Column layout for small screens, row layout for medium screens and above
+        flexDirection: { xs: "column", sm: "column", md: "row" },
       }}
     >
       <Box
@@ -21,7 +21,7 @@ function AboutMe() {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column", // Always use column layout
+            flexDirection: "column",
             alignItems: "start",
             maxWidth: "80%",
           }}
@@ -71,7 +71,7 @@ function AboutMe() {
           justifyContent: "center",
           alignItems: "center",
           background: "#9998A0",
-          mt: { xs: "0px", md: "0" }, // Margin top for smaller screens
+          mt: { xs: "0px", md: "0" },
         }}
       >
         <Box

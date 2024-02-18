@@ -7,12 +7,11 @@ function StartPage() {
       <Box
         sx={{
           display: "flex",
+          flexDirection: { xs: "column", sm: "column", md: "row" },
           justifyContent: "center",
           alignItems: "center",
-          flexDirection: "column",
           height: "100vh",
           background: "#2E2C31",
-          textAlign: "center",
           color: "white",
         }}
       >
@@ -20,7 +19,7 @@ function StartPage() {
         <Box sx={{ marginTop: "-80px" }}>
           <Typography
             sx={{
-              fontSize: { xs: "60px", md: "100px" },
+              fontSize: { xs: "60px", md: "110px" },
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: "300",
               fontStyle: "normal",
@@ -57,7 +56,6 @@ function StartPage() {
             alt="Picture of Jenny"
             width="300px"
             height="300px"
-            // sx={{ borderRadius: "50%" }}
           />
         </Box>
       </Box>
