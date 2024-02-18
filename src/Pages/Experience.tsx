@@ -10,7 +10,7 @@ function Experience() {
           display: "flex",
           flexDirection: { xs: "column", sm: "column", md: "row" },
           justifyContent: "flex-start",
-          height: "100vh",
+          height: "auto",
           background: "#FAECE3",
         }}
       >
@@ -38,6 +38,7 @@ function Experience() {
             sx={{
               fontSize: { xs: "20px", md: "30px" },
               fontFamily: "Cormorant Garamond, serif",
+              mb: "15px",
             }}
           >
             JavaScript | React | TypeScript | React Native | AWS | UX/UI | Scrum
@@ -49,6 +50,7 @@ function Experience() {
               margin: "10px",
               height: "2px",
               backgroundColor: "black",
+              mb: "15px",
             }}
           ></Box>
 
@@ -60,18 +62,19 @@ function Experience() {
               fontStyle: "normal",
             }}
           >
-            INTERNSHIPS
+            INTERNSHIP
           </Typography>
           <Typography
             sx={{
               fontSize: { xs: "20px", md: "25px" },
               fontFamily: "Cormorant Garamond, serif",
+              mb: "15px",
             }}
           >
             My first internship, in the autumn of 2023, I spent at Chalmers
-            University of Technology's IT department at Lindholmen. Here, I got
-            to update email templates and participate in the development of an
-            application using JavaScript and Angular.
+            University of Technology's IT department at Lindholmen.
+            <br /> Here, I got to update email templates and participate in the
+            development of an application using JavaScript and Angular.
           </Typography>
           <Typography
             sx={{
@@ -90,8 +93,12 @@ function Experience() {
             }}
           >
             I have worked as an administrative assistans at Chalmers University
-            of Technology, Sales Coordinator For a full list of my previous work
-            experiences, please visit my{" "}
+            of Technology, a Sales Coordinator at Hasselblad
+            <br /> and a project manager at Film i Dalarna. <br />
+            These employments have given me valuable people skills and a great
+            understanding for what it means to be a reliable employee and the
+            proud and joy of doing a good job. <br />
+            For a full list of my previous work experiences, please visit my{" "}
             <Link
               underline="none"
               color="black"
@@ -100,7 +107,8 @@ function Experience() {
             >
               LinkedIn
             </Link>
-            .
+            .<br />
+            <br />
           </Typography>
         </Box>
       </Box>
