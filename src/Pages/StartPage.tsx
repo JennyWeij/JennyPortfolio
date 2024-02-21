@@ -3,15 +3,20 @@ import Typography from "@mui/material/Typography";
 
 function StartPage() {
   return (
-    <Box>
+    <Box
+      sx={{
+        background: "#2E2C31",
+      }}
+    >
       <Box
         sx={{
           display: "flex",
           flexDirection: { xs: "column", sm: "column", md: "row" },
-          justifyContent: "center",
+          justifyContent: "flex-start",
           alignItems: "center",
           height: "100vh",
           background: "#2E2C31",
+          ml: "5%",
           color: "white",
         }}
       >
