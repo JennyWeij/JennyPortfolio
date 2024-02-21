@@ -152,7 +152,7 @@ function Projects() {
                   position: "absolute",
                   top: 0,
                   left: 0,
-                  width: "100%",
+                  maxWidth: "100%",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
@@ -162,7 +162,14 @@ function Projects() {
                     hoveredProject === project.title ? "visible" : "hidden",
                 }}
               >
-                <Typography>{project.description}</Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Cormorant Garamond, serif",
+                    fontSize: { xs: "16px", md: "25px" },
+                  }}
+                >
+                  {project.description}
+                </Typography>
               </CardContent>
             </Card>
           </Grid>
