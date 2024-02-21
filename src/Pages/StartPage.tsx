@@ -21,7 +21,7 @@ function StartPage() {
         }}
       >
         {/* Text box */}
-        <Box sx={{ marginTop: "-80px" }}>
+        <Box>
           <Typography
             sx={{
               fontSize: { xs: "60px", md: "110px" },

@@ -17,9 +17,7 @@ function AboutMe() {
     >
       <Box
         sx={{
-          // flex: "1",
           display: "flex",
-          // justifyContent: "center",
           ml: "5%",
           alignItems: "center",
         }}
