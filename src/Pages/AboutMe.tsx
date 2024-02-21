@@ -11,15 +11,17 @@ function AboutMe() {
       sx={{
         display: "flex",
         flexDirection: { xs: "column", sm: "column", md: "row" },
+        justifyContent: "flex-start",
+        background: "#9998A0",
       }}
     >
       <Box
         sx={{
-          flex: "1",
+          // flex: "1",
           display: "flex",
-          justifyContent: "center",
+          // justifyContent: "center",
+          ml: "5%",
           alignItems: "center",
-          background: "#9998A0",
         }}
       >
         <Box
@@ -43,7 +45,7 @@ function AboutMe() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "14px", md: "25px" },
+              fontSize: { xs: "20px", md: "25px" },
               color: "black",
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: "500",
