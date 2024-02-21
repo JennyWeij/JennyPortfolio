@@ -147,7 +147,7 @@ function Projects() {
               </CardContent>
               <CardContent
                 sx={{
-                  backgroundColor: "#fff",
+                  backgroundColor: "#FAECE3",
                   transform: "rotateY(180deg)",
                   position: "absolute",
                   top: 0,
