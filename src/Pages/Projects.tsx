@@ -4,8 +4,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import { useState } from "react";
 
 function Projects() {
+  const [hoveredProject, setHoveredProject] = useState<string | null>(null);
+
   const projects = [
     {
       title: "Travel Planner (app)",
@@ -49,6 +52,14 @@ function Projects() {
     },
   ];
 
+  const handleCardHover = (title: string) => {
+    setHoveredProject(title);
+  };
+
+  const handleCardLeave = () => {
+    setHoveredProject(null);
+  };
+
   return (
     <Box
       sx={{
@@ -84,7 +95,19 @@ function Projects() {
           >
             {/* Adjust the size of the Grid item based on your design */}
             <Card
-              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+              sx={{
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                transformStyle: "preserve-3d",
+                transition: "transform 0.5s",
+                transform:
+                  hoveredProject === project.title
+                    ? "rotateY(180deg)"
+                    : "rotateY(0)",
+              }}
+              onMouseEnter={() => handleCardHover(project.title)}
+              onMouseLeave={handleCardLeave}
             >
               <CardContent>
                 <img
