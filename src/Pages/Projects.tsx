@@ -26,27 +26,30 @@ function Projects() {
     },
     {
       title: "Chatropolis",
-      description: "",
+      description:
+        "A school group project where we created a chat-based app that allows users to chat with each other in real-time. The communication was set up and done using socket.io",
       imagePath: "/images/chatropolis.png",
       githubLink: "https://github.com/JennyWeij/project-socket-chat",
     },
     {
       title: "ChitChat",
-      description: "",
+      description:
+        "School group project. A chat application that aims to create a platform where users can register, log in, and create content based on a resource in an Express API.",
       imagePath: "/images/chitchat.png",
       githubLink:
         "https://github.com/plugga-tech/react-express-user-content-ts-jenny-madde-jenny",
     },
     {
       title: "PlanetEn",
-      description: "",
+      description:
+        "A quiz I created during my first week of the JavaScript course. We were asked to create a interactive world and this quiz about gorillas and pandas is my result of that task.",
       imagePath: "/images/PlanetEn.png",
       githubLink: "https://github.com/JennyWeij/PlanetEn-Javascript",
     },
     {
       title: "Star Bomb",
       description:
-        "Final project in the JavaScript basic course. The task was to create a original game and Star Bomb is our result of that final project.",
+        "School group project. Final project in the JavaScript basic course. The task was to create a original game and Star Bomb is our result of that final project.",
       imagePath: "/images/StarBomb.png",
       githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
     },
@@ -141,6 +144,25 @@ function Projects() {
                     <GitHubIcon />
                   </a>
                 </Box>
+              </CardContent>
+              <CardContent
+                sx={{
+                  backgroundColor: "#fff",
+                  transform: "rotateY(180deg)",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  visibility:
+                    hoveredProject === project.title ? "visible" : "hidden",
+                }}
+              >
+                <Typography>{project.description}</Typography>
               </CardContent>
             </Card>
           </Grid>
