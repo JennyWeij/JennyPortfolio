@@ -88,6 +88,13 @@ function AboutMe() {
               color="black"
               href="mailto:jennyweij@outlook.com"
               target="_blank"
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                "&:hover .MuiSvgIcon-root": {
+                  transform: "scale(1.3)",
+                },
+              }}
             >
               <EmailIcon />
               jennyweij@outlook.com |

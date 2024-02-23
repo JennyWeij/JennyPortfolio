@@ -168,7 +168,14 @@ function Projects() {
                     fontSize: { xs: "16px", md: "25px" },
                   }}
                 >
-                  {project.description}
+                  {project.description} <br />
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GitHubIcon />
+                  </a>
                 </Typography>
               </CardContent>
             </Card>

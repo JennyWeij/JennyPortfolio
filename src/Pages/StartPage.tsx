@@ -6,6 +6,11 @@ function StartPage() {
     <Box
       sx={{
         background: "#2E2C31",
+        display: "flex",
+        justifyContent: "center", // Center horizontally
+        alignItems: "center", // Center vertically
+        height: "100vh",
+        position: "relative", // Add relative positioning
       }}
     >
       <Box
@@ -14,10 +19,10 @@ function StartPage() {
           flexDirection: { xs: "column", sm: "column", md: "row" },
           justifyContent: "flex-start",
           alignItems: "center",
-          height: "100vh",
           background: "#2E2C31",
-          ml: "5%",
           color: "white",
+          position: "relative", // Make the container relative
+          zIndex: 1, // Ensure the content is above the line
         }}
       >
         {/* Text box */}
@@ -64,6 +69,25 @@ function StartPage() {
           />
         </Box>
       </Box>
+      {/* <Box
+        sx={{
+          position: "relative",
+          width: "2px",
+          height: "10%",
+          transformStyle: "preserve-3d",
+          transform: "translate3d",
+          animation: `$drip 2s infinite`, // Use the keyframes animation'
+          "@keyframes drip": {
+            "0%": {
+              transform: "translateY(0%)",
+            },
+            "100%": {
+              transform: "translateY(-100%)",
+            },
+          },
+          zIndex: 2, // Ensure the line is above the content
+        }}
+      ></Box> */}
     </Box>
   );
 }
