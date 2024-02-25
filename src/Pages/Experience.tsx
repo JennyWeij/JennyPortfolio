@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 function Experience() {
   return (
-    <Box>
+    <Box sx={{ position: "relative" }}>
       <Box
         sx={{
           display: "flex",

@@ -64,124 +64,126 @@ function Projects() {
   };
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-start",
-        background: "#FEFEFE",
-        padding: "20px",
-      }}
-    >
-      <Typography
+    <Box sx={{ position: "relative" }}>
+      <Box
         sx={{
-          fontSize: { xs: "60px", md: "100px" },
-          fontFamily: "Cormorant Garamond, serif",
-          fontWeight: "300",
-          fontStyle: "normal",
-          ml: "3%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          background: "#FEFEFE",
+          padding: "20px",
         }}
       >
-        PROJECTS
-      </Typography>
+        <Typography
+          sx={{
+            fontSize: { xs: "60px", md: "100px" },
+            fontFamily: "Cormorant Garamond, serif",
+            fontWeight: "300",
+            fontStyle: "normal",
+            ml: "3%",
+          }}
+        >
+          PROJECTS
+        </Typography>
 
-      <Grid container spacing={3}>
-        {projects.map((project) => (
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={4}
-            // eslint-disable-next-line no-constant-condition
-            lg={project.title === "Binding Blooms" || "Star Bomb" ? 3 : 2}
-            key={project.title}
-          >
-            {/* Adjust the size of the Grid item based on your design */}
-            <Card
-              sx={{
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                transformStyle: "preserve-3d",
-                transition: "transform 0.5s",
-                transform:
-                  hoveredProject === project.title
-                    ? "rotateY(180deg)"
-                    : "rotateY(0)",
-              }}
-              onMouseEnter={() => handleCardHover(project.title)}
-              onMouseLeave={handleCardLeave}
+        <Grid container spacing={3}>
+          {projects.map((project) => (
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              // eslint-disable-next-line no-constant-condition
+              lg={project.title === "Binding Blooms" || "Star Bomb" ? 3 : 2}
+              key={project.title}
             >
-              <CardContent>
-                <img
-                  src={project.imagePath}
-                  alt={project.title}
-                  style={{
-                    maxWidth: "100%", // Ensure the image fits within the card
-                    height: "auto", // Maintain aspect ratio
-                    margin: "10px auto",
-                  }}
-                />
-                <Box
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <Typography
-                    variant="h5"
-                    mt="10px"
-                    fontFamily="Cormorant Garamond, serif"
-                  >
-                    {project.title}
-                  </Typography>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitHubIcon />
-                  </a>
-                </Box>
-              </CardContent>
-              <CardContent
+              {/* Adjust the size of the Grid item based on your design */}
+              <Card
                 sx={{
-                  backgroundColor: "#FAECE3",
-                  transform: "rotateY(180deg)",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  maxWidth: "100%",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  visibility:
-                    hoveredProject === project.title ? "visible" : "hidden",
+                  transformStyle: "preserve-3d",
+                  transition: "transform 0.5s",
+                  transform:
+                    hoveredProject === project.title
+                      ? "rotateY(180deg)"
+                      : "rotateY(0)",
                 }}
+                onMouseEnter={() => handleCardHover(project.title)}
+                onMouseLeave={handleCardLeave}
               >
-                <Typography
+                <CardContent>
+                  <img
+                    src={project.imagePath}
+                    alt={project.title}
+                    style={{
+                      maxWidth: "100%", // Ensure the image fits within the card
+                      height: "auto", // Maintain aspect ratio
+                      margin: "10px auto",
+                    }}
+                  />
+                  <Box
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <Typography
+                      variant="h5"
+                      mt="10px"
+                      fontFamily="Cormorant Garamond, serif"
+                    >
+                      {project.title}
+                    </Typography>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon />
+                    </a>
+                  </Box>
+                </CardContent>
+                <CardContent
                   sx={{
-                    fontFamily: "Cormorant Garamond, serif",
-                    fontSize: { xs: "16px", md: "25px" },
+                    backgroundColor: "#FAECE3",
+                    transform: "rotateY(180deg)",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    maxWidth: "100%",
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    visibility:
+                      hoveredProject === project.title ? "visible" : "hidden",
                   }}
                 >
-                  {project.description} <br />
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Typography
+                    sx={{
+                      fontFamily: "Cormorant Garamond, serif",
+                      fontSize: { xs: "16px", md: "25px" },
+                    }}
                   >
-                    <GitHubIcon />
-                  </a>
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+                    {project.description} <br />
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon />
+                    </a>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </Box>
   );
 }
