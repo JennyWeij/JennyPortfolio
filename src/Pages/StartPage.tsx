@@ -10,10 +10,9 @@ function StartPage() {
     const interval = setInterval(() => {
       if (boxRef.current) {
         // Check if boxRef.current is not null
-        boxRef.current.classList.toggle("vertical-line-grey-to-white"); // Toggle grey-to-white animation class
-        boxRef.current.classList.toggle("vertical-line-white-to-grey"); // Toggle white-to-grey animation class
+        boxRef.current.classList.toggle("slide-in-animation");
       }
-    }, 3000); // Run animation every 3 seconds
+    }); // Run animation every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -74,30 +73,46 @@ function StartPage() {
               Studying Front End Developer <br />
               Graduating May 2024
             </Typography>
+            <br />
+            <br />
+            <Typography
+              sx={{
+                fontSize: { xs: "20px", md: "20px" },
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: "300",
+                fontStyle: "normal",
+              }}
+            >
+              "The first time I encountered code was in high school. <br />
+              It was an exhilarating feeling to be able to create something
+              using an entirely new language, <br />
+              to have a blank page in front of you and see it grow into a
+              finished webpage.""
+            </Typography>
           </Box>
 
           {/* Image box */}
           <Box
+            ref={boxRef}
             sx={{
               height: "400px",
               width: "400px",
               display: "flex",
               mt: "10%",
               justifyContent: "flex-start",
-              alignItems: "center",
+              alignItems: "flex-start",
+              animation: "slide-in-animation 1s ease-in forwards", // Apply animation
             }}
           >
             <Box
               component="img"
               src="/images/computertea.png"
               alt="A picture of a computer and a tea cup drawn with lines"
-              width="700px"
-              height="250px"
+              width="600px"
+              height="200px"
             />
           </Box>
         </Box>
-        {/* Runny vertical line */}
-        {/* <Box ref={boxRef} className="vertical-line"></Box> */}
       </Box>
     </Box>
   );

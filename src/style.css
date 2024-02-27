@@ -3,6 +3,15 @@ body {
   padding: 0;
 }
 
+@keyframes slide-in-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* 
 .vertical-line {
   position: absolute;
   left: 50%;
@@ -41,4 +50,4 @@ body {
 
 .vertical-line-white-to-grey {
   animation: change-color-white-to-grey 3s linear infinite;
-}
+} */
