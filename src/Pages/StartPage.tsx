@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useEffect, useRef } from "react";
+import "../style.css";
 
 function StartPage() {
   const boxRef = useRef<HTMLDivElement>(null); // Define the type of the ref
@@ -9,14 +10,10 @@ function StartPage() {
     const interval = setInterval(() => {
       if (boxRef.current) {
         // Check if boxRef.current is not null
-        boxRef.current.style.transform = "translateY(0%)"; // Reset to initial position
-        setTimeout(() => {
-          if (boxRef.current) {
-            boxRef.current.style.transform = "translateY(-100%)"; // Move to bottom
-          }
-        }); // Wait for 50 milliseconds before starting the animation
+        boxRef.current.classList.toggle("vertical-line-grey-to-white"); // Toggle grey-to-white animation class
+        boxRef.current.classList.toggle("vertical-line-white-to-grey"); // Toggle white-to-grey animation class
       }
-    }, 500);
+    }, 3000); // Run animation every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -24,87 +21,84 @@ function StartPage() {
   return (
     <Box
       sx={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
         background: "#2E2C31",
-        display: "flex",
-        justifyContent: "center", // Center horizontally
-        alignItems: "center", // Center vertically
-        height: "100vh",
-        position: "relative", // Add relative positioning
       }}
     >
       <Box
         sx={{
-          display: "flex",
-          flexDirection: { xs: "column", sm: "column", md: "row" },
-          justifyContent: "flex-start",
-          alignItems: "center",
           background: "#2E2C31",
-          color: "white",
-          position: "relative", // Make the container relative
-          zIndex: 1, // Ensure the content is above the line
+          ml: "5%",
+          display: "flex",
+          justifyContent: "flex-start", // Center horizontally
+          alignItems: "center", // Center vertically
+          height: "100vh",
+          position: "relative", // Add relative positioning
         }}
       >
-        {/* Text box */}
-        <Box>
-          <Typography
-            sx={{
-              fontSize: { xs: "60px", md: "110px" },
-              fontFamily: "Cormorant Garamond, serif",
-              fontWeight: "300",
-              fontStyle: "normal",
-            }}
-          >
-            JENNY WEIJLAND
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: { xs: "20px", md: "50px" },
-              fontFamily: "Cormorant Garamond, serif",
-              fontWeight: "300",
-              fontStyle: "normal",
-            }}
-          >
-            Studying Front End Developer <br />
-            Graduating May 2024
-          </Typography>
-        </Box>
-
-        {/* Image box */}
         <Box
           sx={{
-            height: "400px",
-            width: "400px",
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            flexDirection: { xs: "column", sm: "column", md: "row" },
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
+            background: "#2E2C31",
+            color: "white",
+            position: "relative", // Make the container relative
+            zIndex: 1, // Ensure the content is above the line
           }}
         >
+          {/* Text box */}
+          <Box>
+            <Typography
+              sx={{
+                fontSize: { xs: "60px", md: "100px" },
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: "300",
+                fontStyle: "normal",
+              }}
+            >
+              JENNY WEIJLAND
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: { xs: "20px", md: "40px" },
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: "300",
+                fontStyle: "normal",
+              }}
+            >
+              Studying Front End Developer <br />
+              Graduating May 2024
+            </Typography>
+          </Box>
+
+          {/* Image box */}
           <Box
-            component="img"
-            src="/images/cv.jpg"
-            alt="Picture of Jenny"
-            width="300px"
-            height="300px"
-          />
+            sx={{
+              height: "400px",
+              width: "400px",
+              display: "flex",
+              mt: "10%",
+              justifyContent: "flex-start",
+              alignItems: "center",
+            }}
+          >
+            <Box
+              component="img"
+              src="/images/computertea.png"
+              alt="A picture of a computer and a tea cup drawn with lines"
+              width="700px"
+              height="250px"
+            />
+          </Box>
         </Box>
+        {/* Runny vertical line */}
+        {/* <Box ref={boxRef} className="vertical-line"></Box> */}
       </Box>
-      {/* Runny vertical line */}
-      <Box
-        ref={boxRef}
-        style={{
-          transform:
-            "translate3d(0px, -3.419%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-          transformStyle: "preserve-3d",
-          willChange: "transform",
-          marginTop: "15%",
-          // position: "absolute",
-          left: "50%", // Align to the center horizontally
-          top: "50%", // Align to the center vertically
-          width: "2px",
-          height: "20%", // Adjust the height as needed
-          background: "white",
-        }}
-      ></Box>
     </Box>
   );
 }
