@@ -101,7 +101,8 @@ function StartPage() {
               mt: "10%",
               justifyContent: "flex-start",
               alignItems: "flex-start",
-              animation: "slide-in-animation 1s ease-in forwards", // Apply animation
+              animation:
+                "slide-in-animation 3s ease-in forwards, ease-in-animation 8s",
             }}
           >
             <Box
