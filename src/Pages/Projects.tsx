@@ -36,8 +36,7 @@ function Projects() {
       description:
         "School group project. A chat application that aims to create a platform where users can register, log in, and create content based on a resource in an Express API.",
       imagePath: "/images/chitchat.png",
-      githubLink:
-        "https://github.com/plugga-tech/react-express-user-content-ts-jenny-madde-jenny",
+      githubLink: "https://github.com/JennyWeij/ChitChat-react-express",
     },
     {
       title: "PlanetEn",
