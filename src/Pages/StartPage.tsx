@@ -46,15 +46,14 @@ function StartPage() {
             alignItems: "flex-start",
             background: "#2E2C31",
             color: "white",
-            // position: "relative", // Make the container relative
-            // zIndex: 1, // Ensure the content is above the line
+            ndex: 1, // Ensure the content is above the line
           }}
         >
           {/* Text box */}
           <Box>
             <Typography
               sx={{
-                fontSize: { xs: "60px", md: "100px" },
+                fontSize: { xs: "60px", sm: "70px", md: "100px", lg: "100px" },
                 fontFamily: "Cormorant Garamond, serif",
                 fontWeight: "300",
                 fontStyle: "normal",
@@ -64,7 +63,7 @@ function StartPage() {
             </Typography>
             <Typography
               sx={{
-                fontSize: { xs: "20px", md: "40px" },
+                fontSize: { xs: "25px", md: "30px", lg: "40px" },
                 fontFamily: "Cormorant Garamond, serif",
                 fontWeight: "300",
                 fontStyle: "normal",
@@ -77,11 +76,11 @@ function StartPage() {
             <br />
             <Typography
               sx={{
-                fontSize: { xs: "20px", md: "20px" },
+                fontSize: { xs: "18px", sm: "20px", md: "20px" },
                 fontFamily: "Cormorant Garamond, serif",
                 fontWeight: "300",
                 fontStyle: "normal",
-                mt: { xs: "15px", md: "50px" },
+                mt: { xs: "15px", md: "30px", lg: "50px" },
                 animation: "ease-in-typography 12s",
               }}
             >
@@ -89,7 +88,7 @@ function StartPage() {
               It was an exhilarating feeling to be able to create something
               using an entirely new language, <br />
               to have a blank page in front of you and see it grow into a
-              finished webpage.""
+              finished webpage."
             </Typography>
           </Box>
 
@@ -97,8 +96,6 @@ function StartPage() {
           <Box
             ref={boxRef}
             sx={{
-              height: "400px",
-              width: "400px",
               display: "flex",
               mt: "10%",
               justifyContent: "flex-start",
@@ -111,8 +108,10 @@ function StartPage() {
               component="img"
               src="/images/computertea.png"
               alt="A picture of a computer and a tea cup drawn with lines"
-              width="600px"
-              height="200px"
+              sx={{
+                width: { xs: "350px", sm: "400px", md: "400px", lg: "600px" },
+                height: { xs: "150px", sm: "150px", md: "180px", lg: "200px" },
+              }}
             />
           </Box>
         </Box>
