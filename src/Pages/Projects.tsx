@@ -97,14 +97,13 @@ function Projects() {
               lg={project.title === "Binding Blooms" || "Star Bomb" ? 3 : 2}
               key={project.title}
             >
-              {/* Adjust the size of the Grid item based on your design */}
               <Card
                 sx={{
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   transformStyle: "preserve-3d",
-                  transition: "transform 0.5s",
+                  transition: "transform 1.5s",
                   transform:
                     hoveredProject === project.title
                       ? "rotateY(180deg)"
@@ -118,8 +117,8 @@ function Projects() {
                     src={project.imagePath}
                     alt={project.title}
                     style={{
-                      maxWidth: "100%", // Ensure the image fits within the card
-                      height: "auto", // Maintain aspect ratio
+                      maxWidth: "100%",
+                      height: "auto",
                       margin: "10px auto",
                     }}
                   />

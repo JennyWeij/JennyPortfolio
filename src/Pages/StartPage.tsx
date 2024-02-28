@@ -46,8 +46,8 @@ function StartPage() {
             alignItems: "flex-start",
             background: "#2E2C31",
             color: "white",
-            position: "relative", // Make the container relative
-            zIndex: 1, // Ensure the content is above the line
+            // position: "relative", // Make the container relative
+            // zIndex: 1, // Ensure the content is above the line
           }}
         >
           {/* Text box */}
@@ -81,6 +81,8 @@ function StartPage() {
                 fontFamily: "Cormorant Garamond, serif",
                 fontWeight: "300",
                 fontStyle: "normal",
+                mt: { xs: "15px", md: "50px" },
+                animation: "ease-in-typography 12s",
               }}
             >
               "The first time I encountered code was in high school. <br />
