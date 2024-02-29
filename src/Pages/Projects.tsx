@@ -67,7 +67,13 @@ function Projects() {
   };
 
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box
+      sx={{
+        position: "absolute",
+        backgroundColor: "white",
+        marginBottom: "150px",
+      }}
+    >
       <Box
         sx={{
           display: "flex",

@@ -71,10 +71,11 @@ function Experience() {
               mb: "15px",
             }}
           >
-            My first internship, in the autumn of 2023, I spent at Chalmers
-            University of Technology's IT department at Lindholmen.
-            <br /> Here, I got to update email templates and participate in the
-            development of an application using JavaScript and Angular.
+            I spent my first 10 week internship, in the autumn of 2023, at
+            Chalmers University of Technology's IT department at Lindholmen,
+            Gothenburg.
+            <br /> Here, I got to participate in the development of an
+            application using JavaScript and Angular.
           </Typography>
           <Typography
             sx={{
