@@ -1,4 +1,5 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -22,6 +23,7 @@ function Projects() {
       description:
         "My project from the graphic design course where we were asked to create a graphic profile, a logo and a website. I made up the company Binding Blooms.",
       imagePath: "/images/BindingBlooms.png",
+      demoLink: "https://binding-blooms.netlify.app/",
       githubLink: "https://github.com/JennyWeij/BindingBlooms",
     },
     {
@@ -36,13 +38,14 @@ function Projects() {
       description:
         "School group project. A chat application that aims to create a platform where users can register, log in, and create content based on a resource in an Express API.",
       imagePath: "/images/chitchat.png",
-      githubLink: "https://github.com/JennyWeij/ChitChat-react-express",
+      githubLink: "https://github.com/JennyWeij/ChitChat",
     },
     {
       title: "PlanetEn",
       description:
         "A quiz I created during my first week of the JavaScript course. We were asked to create a interactive world and this quiz about gorillas and pandas is my result of that task.",
       imagePath: "/images/PlanetEn.png",
+      demoLink: "https://planetenjavascript.netlify.app/",
       githubLink: "https://github.com/JennyWeij/PlanetEn-Javascript",
     },
     {
@@ -50,6 +53,7 @@ function Projects() {
       description:
         "School group project. Final project in the JavaScript basic course. The task was to create a original game and Star Bomb is our result of that final project.",
       imagePath: "/images/StarBomb.png",
+      demoLink: "https://star-bomb.netlify.app/",
       githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
     },
   ];
@@ -111,12 +115,20 @@ function Projects() {
                 onMouseEnter={() => handleCardHover(project.title)}
                 onMouseLeave={handleCardLeave}
               >
-                <CardContent>
+                <CardContent
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
                   <img
                     src={project.imagePath}
                     alt={project.title}
                     style={{
                       maxWidth: "100%",
+                      maxHeight: "200px",
+                      width: "auto",
                       height: "auto",
                       margin: "10px auto",
                     }}
@@ -126,6 +138,8 @@ function Projects() {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "space-between",
+                      width: "100%", // Ensures the contents are stretched
+                      marginTop: "auto", // Pushes content to the bottom
                     }}
                   >
                     <Typography
@@ -135,6 +149,15 @@ function Projects() {
                     >
                       {project.title}
                     </Typography>
+                    {project.demoLink && (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <PlayCircleIcon />
+                      </a>
+                    )}
                     <a
                       href={project.githubLink}
                       target="_blank"
@@ -144,6 +167,7 @@ function Projects() {
                     </a>
                   </Box>
                 </CardContent>
+
                 <CardContent
                   sx={{
                     backgroundColor: "#FAECE3",
@@ -168,6 +192,15 @@ function Projects() {
                     }}
                   >
                     {project.description} <br />
+                    {project.demoLink && (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <PlayCircleIcon />
+                      </a>
+                    )}
                     <a
                       href={project.githubLink}
                       target="_blank"
