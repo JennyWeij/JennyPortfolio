@@ -12,7 +12,7 @@ function StartPage() {
         // Check if boxRef.current is not null
         boxRef.current.classList.toggle("slide-in-animation");
       }
-    }); // Run animation every 3 seconds
+    });
 
     return () => clearInterval(interval);
   }, []);
@@ -23,7 +23,6 @@ function StartPage() {
         position: "fixed",
         top: 0,
         left: 0,
-        width: "100%",
         background: "#2E2C31",
       }}
     >
@@ -31,6 +30,7 @@ function StartPage() {
         sx={{
           background: "#2E2C31",
           ml: "5%",
+          maxWidth: "90%",
           display: "flex",
           justifyContent: "flex-start", // Center horizontally
           alignItems: "center", // Center vertically
@@ -46,7 +46,6 @@ function StartPage() {
             alignItems: "flex-start",
             background: "#2E2C31",
             color: "white",
-            ndex: 1, // Ensure the content is above the line
           }}
         >
           {/* Text box */}
@@ -57,6 +56,7 @@ function StartPage() {
                 fontFamily: "Cormorant Garamond, serif",
                 fontWeight: "300",
                 fontStyle: "normal",
+                lineHeight: "1.30",
               }}
             >
               JENNY WEIJLAND
@@ -73,22 +73,20 @@ function StartPage() {
               Graduating May 2024
             </Typography>
             <br />
-            <br />
             <Typography
               sx={{
                 fontSize: { xs: "18px", sm: "20px", md: "20px" },
                 fontFamily: "Cormorant Garamond, serif",
-                fontWeight: "300",
+                fontWeight: "500",
                 fontStyle: "normal",
                 mt: { xs: "15px", md: "30px", lg: "50px" },
                 animation: "ease-in-typography 12s",
               }}
             >
-              "The first time I encountered code was in high school. <br />
-              It was an exhilarating feeling to be able to create something
-              using an entirely new language, <br />
-              to have a blank page in front of you and see it grow into a
-              finished webpage."
+              "The first time I encountered code was in high school. It was an
+              exhilarating feeling to be able to create something using an
+              entirely new language, to have a blank page in front of you and
+              see it grow into a finished webpage."
             </Typography>
           </Box>
 

@@ -19,13 +19,15 @@ function Experience() {
           sx={{
             textAlign: "start",
             justifyItems: "start",
+            maxWidth: "85%",
+
             mt: "15px",
             ml: "5%",
           }}
         >
           <Typography
             sx={{
-              fontSize: { xs: "60px", md: "100px" },
+              fontSize: { xs: "55px", md: "100px" },
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: "300",
               fontStyle: "normal",
@@ -68,12 +70,12 @@ function Experience() {
               fontSize: { xs: "20px", md: "25px" },
               fontFamily: "Cormorant Garamond, serif",
               mb: "15px",
+              fontWeight: "500",
             }}
           >
             I spent my first 10 week internship, in the autumn of 2023, at
             Chalmers University of Technology's IT department at Lindholmen,
-            Gothenburg.
-            <br /> Here, I got to participate in the development of an
+            Gothenburg. Here, I got to participate in the development of an
             application using JavaScript and Angular.
           </Typography>
           <Typography
@@ -90,6 +92,7 @@ function Experience() {
             sx={{
               fontSize: { xs: "20px", md: "25px" },
               fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "500",
             }}
           >
             I have worked as an administrative assistans at Chalmers University

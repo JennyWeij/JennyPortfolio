@@ -47,8 +47,7 @@ function AboutMe() {
                 fontSize: { xs: "20px", md: "25px" },
                 color: "black",
                 fontFamily: "Cormorant Garamond, serif",
-                fontWeight: "500",
-                fontStyle: "normal",
+                fontWeight: "600",
                 mt: "20px",
                 mb: "40px",
               }}
