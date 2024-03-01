@@ -56,16 +56,18 @@ function AboutMe() {
               When asked whether this girl from Dalarna can handle stress,
               different types of people, other people's stress, structure, plan
               and carry out tasks, the answer is a clear YES. <br />
-              The experiences I have gained through my previous jobs, including
-              jobs in the service industry, will be useful to me no matter what
-              type of profession or workplace my future has to offer. <br />
-              Through my previous employments, I have learned what I want to get
-              out of my future workplace and what I need in order to be happy
-              and want to stay.
+              My varied work experiences, particularly in the service industry,
+              have equipped me with many adaptable skills.
               <br /> I am passionate about technology and its potential to drive
-              positive change. I always strive to become better, faster and to
-              do a good job. I look forward to gaining a lot of trust and living
-              up to the expectations set for me.
+              positive change. I always strive to become better and to do a good
+              job. I look forward to gaining a lot of trust and living up to the
+              expectations set for me. <br />
+              <br />
+              When I am not coding I love to watch movies (all genres), listen
+              to music (most genres but top 3 is: 80's, 90's and film scores),
+              hang out with friends and family (both in Gothenburg and Borlänge)
+              and eat amazing food at great restaurants (the spicier the
+              better).
             </Typography>
             <Typography
               sx={{
@@ -77,48 +79,70 @@ function AboutMe() {
             >
               CONTACT
             </Typography>
-            <Typography
+            <Box
               sx={{
-                fontSize: { xs: "20px", md: "30px" },
-                fontFamily: "Cormorant Garamond, serif",
+                display: "flex",
                 mb: "15px",
+                flexDirection: { xs: "column", sm: "row", md: "row" },
               }}
             >
-              <Link
-                underline="none"
-                color="black"
-                href="mailto:jennyweij@outlook.com"
-                target="_blank"
+              <Box>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "20px", md: "30px" },
+                    fontFamily: "Cormorant Garamond, serif",
+                  }}
+                >
+                  <Link
+                    underline="none"
+                    color="black"
+                    href="mailto:jennyweij@outlook.com"
+                    target="_blank"
+                    sx={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      "&:hover .MuiSvgIcon-root": {
+                        transform: "scale(1.3)",
+                      },
+                    }}
+                  >
+                    <EmailIcon />
+                    jennyweij@outlook.com |{" "}
+                  </Link>
+                </Typography>
+              </Box>
+              <Typography
                 sx={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  "&:hover .MuiSvgIcon-root": {
-                    transform: "scale(1.3)",
-                  },
+                  fontSize: { xs: "20px", md: "30px" },
+                  fontFamily: "Cormorant Garamond, serif",
                 }}
               >
-                <EmailIcon />
-                jennyweij@outlook.com |
-              </Link>
-              <Link
-                underline="none"
-                color="black"
-                href="https://www.linkedin.com/in/jenny-weijland-frontend/"
-                target="_blank"
+                <Link
+                  underline="none"
+                  color="black"
+                  href="https://www.linkedin.com/in/jenny-weijland-frontend/"
+                  target="_blank"
+                >
+                  <LinkedInIcon /> LinkedIn |{" "}
+                </Link>
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "20px", md: "30px" },
+                  fontFamily: "Cormorant Garamond, serif",
+                }}
               >
-                <LinkedInIcon />
-                LinkedIn
-              </Link>{" "}
-              |{" "}
-              <Link
-                underline="none"
-                color="black"
-                href="https://github.com/JennyWeij"
-                target="_blank"
-              >
-                <GitHubIcon /> GitHub
-              </Link>
-            </Typography>
+                <Link
+                  underline="none"
+                  color="black"
+                  href="https://github.com/JennyWeij"
+                  target="_blank"
+                >
+                  {" "}
+                  <GitHubIcon /> GitHub
+                </Link>
+              </Typography>
+            </Box>
           </Box>
         </Box>
 
