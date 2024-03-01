@@ -33,11 +33,18 @@ function StartPage() {
           maxWidth: "90%",
           display: "flex",
           justifyContent: "flex-start", // Center horizontally
-          alignItems: "center", // Center vertically
+          alignItems: { xs: "flex-start", sm: "flex-start", md: "flex-start" }, // Center vertically
           height: "100vh",
           position: "relative", // Add relative positioning
         }}
       >
+        {/* Scroll effect  */}
+        <Box id="scroll-wrapper">
+          <div id="scroll-wrapper-inner">
+            {/* <div id="scroll-title">Scroll</div> */}
+            <div id="scroll-down"></div>
+          </div>
+        </Box>
         <Box
           sx={{
             display: "flex",
@@ -75,7 +82,7 @@ function StartPage() {
             <br />
             <Typography
               sx={{
-                fontSize: { xs: "18px", sm: "20px", md: "20px" },
+                fontSize: { xs: "15px", sm: "20px", md: "20px" },
                 fontFamily: "Cormorant Garamond, serif",
                 fontWeight: "500",
                 fontStyle: "normal",
