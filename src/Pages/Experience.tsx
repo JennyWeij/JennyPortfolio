@@ -19,14 +19,13 @@ function Experience() {
           sx={{
             textAlign: "start",
             justifyItems: "start",
-            color: "black",
             mt: "15px",
             ml: "5%",
           }}
         >
           <Typography
             sx={{
-              fontSize: { xs: "40px", md: "100px" },
+              fontSize: { xs: "60px", md: "100px" },
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: "300",
               fontStyle: "normal",
@@ -46,9 +45,9 @@ function Experience() {
           </Typography>
           <Box
             sx={{
-              width: "80%",
+              width: "90%",
               margin: "10px",
-              height: "2px",
+              height: "1px",
               backgroundColor: "black",
               mb: "15px",
             }}

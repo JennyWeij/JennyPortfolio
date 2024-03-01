@@ -83,7 +83,13 @@ function AboutMe() {
               sx={{
                 display: "flex",
                 mb: "15px",
-                flexDirection: { xs: "column", sm: "row", md: "row" },
+                flexWrap: "wrap",
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                },
               }}
             >
               <Box>
