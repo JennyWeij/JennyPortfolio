@@ -67,6 +67,15 @@ function Experience() {
           </Typography>
           <Typography
             sx={{
+              fontSize: { xs: "20px", md: "30px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontStyle: "normal",
+            }}
+          >
+            - Chalmers University of Technology
+          </Typography>
+          <Typography
+            sx={{
               fontSize: { xs: "20px", md: "25px" },
               fontFamily: "Cormorant Garamond, serif",
               mb: "15px",
@@ -77,6 +86,38 @@ function Experience() {
             Chalmers University of Technology's IT department at Lindholmen,
             Gothenburg. Here, I got to participate in the development of an
             application using JavaScript and Angular.
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "20px", md: "30px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "bold",
+              fontStyle: "normal",
+            }}
+          >
+            INTERNSHIP
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "20px", md: "30px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontStyle: "normal",
+            }}
+          >
+            - Novalo Technologies
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "20px", md: "25px" },
+              fontFamily: "Cormorant Garamond, serif",
+              mb: "15px",
+              fontWeight: "500",
+            }}
+          >
+            I spent my second and final internship at Novalo Technologies. Here
+            I gained experience working with Amazon Web Services (AWS) and
+            deepened my knowledge of JavaScript and React. In the projects
+            during the internship I also worked with Python.
           </Typography>
           <Typography
             sx={{

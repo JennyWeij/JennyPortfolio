@@ -34,21 +34,6 @@ function AboutMe() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "18px", sm: "20px", md: "20px" },
-                fontFamily: "Cormorant Garamond, serif",
-                fontWeight: "500",
-                fontStyle: "normal",
-                mt: { xs: "15px", md: "30px", lg: "50px" },
-                animation: "ease-in-typography 6s",
-              }}
-            >
-              "The first time I encountered code was in high school. It was an
-              exhilarating feeling to be able to create something using an
-              entirely new language, to have a blank page in front of you and
-              see it grow into a finished webpage."
-            </Typography>
-            <Typography
-              sx={{
                 fontSize: { xs: "60px", md: "100px" },
                 fontFamily: "Cormorant Garamond, serif",
                 fontWeight: "300",
@@ -57,6 +42,19 @@ function AboutMe() {
             >
               ABOUT ME
             </Typography>
+
+            <Typography
+              sx={{
+                fontSize: { xs: "18px", md: "25px", lg: "30px" },
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: "300",
+                fontStyle: "normal",
+              }}
+            >
+              Studying Front End Developer <br />
+              Graduating May 2024
+            </Typography>
+
             <Typography
               sx={{
                 fontSize: { xs: "20px", md: "25px" },

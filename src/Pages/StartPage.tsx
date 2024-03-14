@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import "../style.css";
 
 function StartPage() {
-  const boxRef = useRef<HTMLDivElement>(null); // Define the type of the ref
+  const boxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,16 +32,15 @@ function StartPage() {
           ml: "5%",
           maxWidth: "90%",
           display: "flex",
-          justifyContent: "flex-start", // Center horizontally
-          alignItems: { xs: "flex-start", sm: "flex-start", md: "flex-start" }, // Center vertically
+          justifyContent: "center", // Center horizontally
+          alignItems: { xs: "flex-start", sm: "flex-start", md: "center" }, // Center vertically
           height: "100vh",
-          position: "relative", // Add relative positioning
+          position: "relative",
         }}
       >
         {/* Scroll effect  */}
         <Box id="scroll-wrapper">
           <div id="scroll-wrapper-inner">
-            {/* <div id="scroll-title">Scroll</div> */}
             <div id="scroll-down"></div>
           </div>
         </Box>
@@ -68,7 +67,7 @@ function StartPage() {
             >
               JENNY WEIJLAND
             </Typography>
-            <Typography
+            {/* <Typography
               sx={{
                 fontSize: { xs: "25px", md: "30px", lg: "40px" },
                 fontFamily: "Cormorant Garamond, serif",
@@ -78,8 +77,7 @@ function StartPage() {
             >
               Studying Front End Developer <br />
               Graduating May 2024
-            </Typography>
-            <br />
+            </Typography> */}
             <Typography
               sx={{
                 fontSize: { xs: "15px", sm: "20px", md: "20px" },

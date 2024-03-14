@@ -56,27 +56,13 @@ body {
   text-align: center;
 }
 
-/* #scroll-title {
-  display: block;
-  text-transform: uppercase;
-  color: #FFF;
-  font-family: "Courier-Prime", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.4em;
-  text-align: center;
-  transform: rotate(90deg);
-  margin-bottom: 45px;
-} */
-
-
 #scroll-down::before {
   -webkit-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
   -moz-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
   -o-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
   animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 80%;
   margin-left: -1px;
   width: 2px;
