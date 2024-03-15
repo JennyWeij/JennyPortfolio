@@ -85,7 +85,7 @@ function Experience() {
             I spent my first 10 week internship, in the autumn of 2023, at
             Chalmers University of Technology's IT department at Lindholmen,
             Gothenburg. Here, I got to participate in the development of an
-            application using JavaScript and Angular.
+            application using <b>JavaScript</b> and <b>Angular</b>.
           </Typography>
           <Typography
             sx={{
@@ -115,9 +115,9 @@ function Experience() {
             }}
           >
             I spent my second and final internship at Novalo Technologies. Here
-            I gained experience working with Amazon Web Services (AWS) and
-            deepened my knowledge of JavaScript and React. In the projects
-            during the internship I also worked with Python.
+            I gained experience working with <b>Amazon Web Services</b> (AWS)
+            and deepened my knowledge of <b>JavaScript</b> and <b>React</b>. In
+            the projects during the internship I also worked with <b>Python</b>.
           </Typography>
           <Typography
             sx={{
