@@ -134,6 +134,7 @@ function Projects() {
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "center",
+                      justifyContent: "flex-end",
                     }}
                   >
                     <img
@@ -160,25 +161,29 @@ function Projects() {
                         variant="h5"
                         mt="10px"
                         fontFamily="Cormorant Garamond, serif"
+                        style={{ alignSelf: "flex-start" }}
                       >
                         {project.title}
                       </Typography>
-                      {project.demoLink && (
+                      <div style={{ display: "flex", alignItems: "center" }}>
+                        {project.demoLink && (
+                          <a
+                            href={project.demoLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ marginRight: "10px" }}
+                          >
+                            <PlayCircleIcon />
+                          </a>
+                        )}
                         <a
-                          href={project.demoLink}
+                          href={project.githubLink}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <PlayCircleIcon />
+                          <GitHubIcon />
                         </a>
-                      )}
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <GitHubIcon />
-                      </a>
+                      </div>
                     </Box>
                   </CardContent>
 
