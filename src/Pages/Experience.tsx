@@ -65,21 +65,21 @@ function Experience() {
           >
             INTERNSHIP
           </Typography>
-          <Typography
+          {/* <Typography
             sx={{
-              fontSize: { xs: "20px", md: "30px" },
-              fontFamily: "Cormorant Garamond, serif",
+              fontSize: { xs: "20px", md: "25px" },
+              fontFamily: "Comfortaa, sans-serif;",
               fontStyle: "normal",
             }}
           >
             - Chalmers University of Technology
-          </Typography>
+          </Typography> */}
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "25px" },
-              fontFamily: "Cormorant Garamond, serif",
+              fontSize: { xs: "20px", md: "16px" },
               mb: "15px",
-              fontWeight: "500",
+              fontFamily: "Comfortaa, sans-serif",
+              fontStyle: "normal",
             }}
           >
             I spent my first 10 week internship, in the autumn of 2023, at
@@ -97,7 +97,7 @@ function Experience() {
           >
             INTERNSHIP
           </Typography>
-          <Typography
+          {/* <Typography
             sx={{
               fontSize: { xs: "20px", md: "30px" },
               fontFamily: "Cormorant Garamond, serif",
@@ -105,13 +105,13 @@ function Experience() {
             }}
           >
             - Novalo Technologies
-          </Typography>
+          </Typography> */}
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "25px" },
-              fontFamily: "Cormorant Garamond, serif",
+              fontSize: { xs: "20px", md: "16px" },
+              fontFamily: "Comfortaa, sans-serif",
               mb: "15px",
-              fontWeight: "500",
+              fontWeight: "400",
             }}
           >
             I spent my second and final internship at Novalo Technologies. Here
@@ -131,17 +131,17 @@ function Experience() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "25px" },
-              fontFamily: "Cormorant Garamond, serif",
+              fontSize: { xs: "20px", md: "16px" },
+              fontFamily: "Comfortaa, sans-serif",
               fontWeight: "500",
             }}
           >
             I have worked as an administrative assistans at Chalmers University
             of Technology, a Sales Coordinator at Hasselblad
-            <br /> and a project manager at Film i Dalarna. <br />
-            These employments have given me valuable people skills and a great
-            understanding for what it means to be a reliable employee and the
-            proud and joy of doing a good job. <br />
+            <br /> and a project manager at Film i Dalarna. These employments
+            have given me valuable people skills and a great understanding for
+            what it means to be a reliable employee and the proud and joy of
+            doing a good job. <br />
             For a full list of my previous work experiences, please visit my{" "}
             <Link
               underline="none"

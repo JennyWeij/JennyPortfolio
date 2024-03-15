@@ -80,9 +80,9 @@ function StartPage() {
             </Typography> */}
             <Typography
               sx={{
-                fontSize: { xs: "15px", sm: "20px", md: "20px" },
-                fontFamily: "Cormorant Garamond, serif",
-                fontWeight: "500",
+                fontSize: { xs: "15px", sm: "18px", md: "16px" },
+                fontFamily: "Comfortaa, sans-serif",
+                fontWeight: "300",
                 fontStyle: "normal",
                 mt: { xs: "15px", md: "30px", lg: "50px" },
                 animation: "ease-in-typography 12s",

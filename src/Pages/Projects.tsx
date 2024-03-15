@@ -199,8 +199,8 @@ function Projects() {
                   >
                     <Typography
                       sx={{
-                        fontFamily: "Cormorant Garamond, serif",
-                        fontSize: { xs: "16px", md: "25px" },
+                        fontFamily: "Comfortaa, sans-serif",
+                        fontSize: { xs: "16px", md: "18px" },
                       }}
                     >
                       {project.description} <br />

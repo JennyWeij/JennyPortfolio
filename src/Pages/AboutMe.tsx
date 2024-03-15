@@ -45,8 +45,8 @@ function AboutMe() {
 
             <Typography
               sx={{
-                fontSize: { xs: "18px", md: "25px", lg: "30px" },
-                fontFamily: "Cormorant Garamond, serif",
+                fontSize: { xs: "18px", md: "25px", lg: "25px" },
+                fontFamily: "Comfortaa, sans-serif",
                 fontWeight: "300",
                 fontStyle: "normal",
               }}
@@ -57,10 +57,10 @@ function AboutMe() {
 
             <Typography
               sx={{
-                fontSize: { xs: "20px", md: "25px" },
+                fontSize: { xs: "20px", md: "18px" },
                 color: "black",
-                fontFamily: "Cormorant Garamond, serif",
-                fontWeight: "600",
+                fontFamily: "Comfortaa, sans-serif",
+                fontWeight: "400",
                 mt: "20px",
                 mb: "40px",
               }}
