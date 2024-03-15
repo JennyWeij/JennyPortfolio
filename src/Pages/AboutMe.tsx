@@ -57,7 +57,7 @@ function AboutMe() {
 
             <Typography
               sx={{
-                fontSize: { xs: "20px", md: "18px" },
+                fontSize: { xs: "16px", md: "18px" },
                 color: "black",
                 fontFamily: "Comfortaa, sans-serif",
                 fontWeight: "400",

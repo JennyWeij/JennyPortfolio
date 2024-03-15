@@ -67,7 +67,7 @@ function Experience() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "18px" },
+              fontSize: { xs: "16px", md: "18px" },
               fontFamily: "Comfortaa, sans-serif;",
               fontStyle: "normal",
             }}
@@ -76,7 +76,7 @@ function Experience() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "16px" },
+              fontSize: { xs: "14px", md: "16px" },
               mb: "15px",
               fontFamily: "Comfortaa, sans-serif",
               fontWeight: "400",
@@ -99,7 +99,7 @@ function Experience() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "18px" },
+              fontSize: { xs: "16px", md: "18px" },
               fontFamily: "Comfortaa, sans-serif;",
               fontWeight: "400",
             }}
@@ -108,7 +108,7 @@ function Experience() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "16px" },
+              fontSize: { xs: "14px", md: "16px" },
               fontFamily: "Comfortaa, sans-serif",
               mb: "15px",
               fontWeight: "400",
@@ -131,7 +131,7 @@ function Experience() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "20px", md: "16px" },
+              fontSize: { xs: "14px", md: "16px" },
               fontFamily: "Comfortaa, sans-serif",
               fontWeight: "400",
             }}

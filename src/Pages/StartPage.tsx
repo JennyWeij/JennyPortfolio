@@ -80,7 +80,7 @@ function StartPage() {
             </Typography> */}
             <Typography
               sx={{
-                fontSize: { xs: "15px", sm: "18px", md: "16px" },
+                fontSize: { xs: "13px", sm: "15px", md: "16px" },
                 fontFamily: "Comfortaa, sans-serif",
                 fontWeight: "300",
                 fontStyle: "normal",
