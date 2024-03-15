@@ -65,21 +65,21 @@ function Experience() {
           >
             INTERNSHIP
           </Typography>
-          {/* <Typography
+          <Typography
             sx={{
-              fontSize: { xs: "20px", md: "25px" },
+              fontSize: { xs: "20px", md: "18px" },
               fontFamily: "Comfortaa, sans-serif;",
               fontStyle: "normal",
             }}
           >
-            - Chalmers University of Technology
-          </Typography> */}
+            Chalmers University of Technology
+          </Typography>
           <Typography
             sx={{
               fontSize: { xs: "20px", md: "16px" },
               mb: "15px",
               fontFamily: "Comfortaa, sans-serif",
-              fontStyle: "normal",
+              fontWeight: "400",
             }}
           >
             I spent my first 10 week internship, in the autumn of 2023, at
@@ -97,15 +97,15 @@ function Experience() {
           >
             INTERNSHIP
           </Typography>
-          {/* <Typography
+          <Typography
             sx={{
-              fontSize: { xs: "20px", md: "30px" },
-              fontFamily: "Cormorant Garamond, serif",
-              fontStyle: "normal",
+              fontSize: { xs: "20px", md: "18px" },
+              fontFamily: "Comfortaa, sans-serif;",
+              fontWeight: "400",
             }}
           >
-            - Novalo Technologies
-          </Typography> */}
+            Novalo Technologies
+          </Typography>
           <Typography
             sx={{
               fontSize: { xs: "20px", md: "16px" },
@@ -133,7 +133,7 @@ function Experience() {
             sx={{
               fontSize: { xs: "20px", md: "16px" },
               fontFamily: "Comfortaa, sans-serif",
-              fontWeight: "500",
+              fontWeight: "400",
             }}
           >
             I have worked as an administrative assistans at Chalmers University
