@@ -105,15 +105,7 @@ function Projects() {
 
           <Grid container spacing={3}>
             {projects.map((project) => (
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                // eslint-disable-next-line no-constant-condition
-                lg={project.title === "Binding Blooms" || "Star Bomb" ? 3 : 2}
-                key={project.title}
-              >
+              <Grid item xs={12} sm={6} md={4} key={project.title}>
                 <Card
                   sx={{
                     height: "100%",
