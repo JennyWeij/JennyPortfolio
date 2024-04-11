@@ -63,7 +63,7 @@ function Experience() {
               fontStyle: "normal",
             }}
           >
-            INTERNSHIP
+            INTERNSHIPS
           </Typography>
           <Typography
             sx={{
@@ -84,10 +84,11 @@ function Experience() {
           >
             I spent my first 10 week internship, in the autumn of 2023, at
             Chalmers University of Technology's IT department at Lindholmen,
-            Gothenburg. Here, I got to participate in the development of an
-            application using <b>JavaScript</b> and <b>Angular</b>.
+            Gothenburg. <br />
+            Here, I got to participate in the development of an application
+            using <b>JavaScript</b> and <b>Angular</b>.
           </Typography>
-          <Typography
+          {/* <Typography
             sx={{
               fontSize: { xs: "20px", md: "30px" },
               fontFamily: "Cormorant Garamond, serif",
@@ -96,7 +97,7 @@ function Experience() {
             }}
           >
             INTERNSHIP
-          </Typography>
+          </Typography> */}
           <Typography
             sx={{
               fontSize: { xs: "16px", md: "18px" },
