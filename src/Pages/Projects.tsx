@@ -216,6 +216,7 @@ function Projects() {
                         <a
                           href={project.demoLink}
                           target="_blank"
+                          style={{ marginRight: "10px" }}
                           rel="noopener noreferrer"
                         >
                           <PlayCircleIcon />
