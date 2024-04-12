@@ -88,16 +88,6 @@ function Experience() {
             Here, I got to participate in the development of an application
             using <b>JavaScript</b> and <b>Angular</b>.
           </Typography>
-          {/* <Typography
-            sx={{
-              fontSize: { xs: "20px", md: "30px" },
-              fontFamily: "Cormorant Garamond, serif",
-              fontWeight: "bold",
-              fontStyle: "normal",
-            }}
-          >
-            INTERNSHIP
-          </Typography> */}
           <Typography
             sx={{
               fontSize: { xs: "16px", md: "18px" },

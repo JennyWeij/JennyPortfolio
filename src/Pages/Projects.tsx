@@ -16,6 +16,7 @@ function Projects() {
       description:
         "React Native app Travel Planner, made together with Madeleine Gustafsson. Our final project in school.",
       imagePath: "/images/TravelPlannerapp.jpg.png",
+      when: "December 2023 - January 2024",
       githubLink: "https://github.com/JennyWeij/TravelApp",
     },
     {
@@ -23,6 +24,7 @@ function Projects() {
       description:
         "My project from the graphic design course where we were asked to create a graphic profile, a logo and a website. I made up the company Binding Blooms.",
       imagePath: "/images/BindingBlooms.png",
+      when: "August 2023 - September 2023",
       demoLink: "https://binding-blooms.netlify.app/",
       githubLink: "https://github.com/JennyWeij/BindingBlooms",
     },
@@ -30,6 +32,7 @@ function Projects() {
       title: "Chatropolis",
       description:
         "A school group project where we created a chat-based app that allows users to chat with each other in real-time. The communication was set up and done using socket.io",
+      when: "May 3rd, 2023 - May 12th, 2023",
       imagePath: "/images/chatropolis.png",
       githubLink: "https://github.com/JennyWeij/project-socket-chat",
     },
@@ -38,6 +41,7 @@ function Projects() {
       description:
         "School group project. A chat application that aims to create a platform where users can register, log in, and create content based on a resource in an Express API.",
       imagePath: "/images/chitchat.png",
+      when: "April 12th, 2023 - April 28th, 2023",
       githubLink: "https://github.com/JennyWeij/ChitChat",
     },
     {
@@ -45,6 +49,7 @@ function Projects() {
       description:
         "A quiz I created during my first week of the JavaScript course. We were asked to create a interactive world and this quiz about gorillas and pandas is my result of that task.",
       imagePath: "/images/PlanetEn.png",
+      when: "November 11th, 2022 - November 21st, 2022",
       demoLink: "https://planetenjavascript.netlify.app/",
       githubLink: "https://github.com/JennyWeij/PlanetEn-Javascript",
     },
@@ -53,6 +58,7 @@ function Projects() {
       description:
         "School group project. Final project in the JavaScript basic course. The task was to create a original game and Star Bomb is our result of that final project.",
       imagePath: "/images/StarBomb.png",
+      when: "January 2023 - February 2023",
       demoLink: "https://star-bomb.netlify.app/",
       githubLink: "https://github.com/JennyWeij/Star-Bomb-game",
     },
@@ -157,7 +163,7 @@ function Projects() {
                       >
                         {project.title}
                       </Typography>
-                      <div style={{ display: "flex", alignItems: "center" }}>
+                      <Box style={{ display: "flex", alignItems: "center" }}>
                         {project.demoLink && (
                           <a
                             href={project.demoLink}
@@ -175,7 +181,7 @@ function Projects() {
                         >
                           <GitHubIcon />
                         </a>
-                      </div>
+                      </Box>
                     </Box>
                   </CardContent>
 
@@ -204,6 +210,8 @@ function Projects() {
                       }}
                     >
                       {project.description} <br />
+                      <br />
+                      {project.when} <br />
                       {project.demoLink && (
                         <a
                           href={project.demoLink}
