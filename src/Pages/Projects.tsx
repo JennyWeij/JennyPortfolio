@@ -92,6 +92,7 @@ function Projects() {
             marginBottom: "150px",
             display: "flex",
             ml: "3%",
+            mr: "3%",
             flexDirection: "column",
             justifyContent: "flex-start",
             background: "#FEFEFE",
