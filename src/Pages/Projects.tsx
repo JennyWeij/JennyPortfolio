@@ -235,6 +235,36 @@ function Projects() {
               </Grid>
             ))}
           </Grid>
+          <Typography
+            sx={{
+              fontSize: { xs: "50px", md: "100px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "300",
+              fontStyle: "normal",
+              marginTop: "10px",
+            }}
+          >
+            INTERNSHIP PROJECTS
+          </Typography>
+
+          <Typography
+            sx={{
+              fontFamily: "Comfortaa, sans-serif",
+              fontSize: { xs: "16px", md: "25px" },
+              margin: "5px",
+            }}
+          >
+            Coming soon
+          </Typography>
+          <Box
+            style={{
+              display: "flex",
+              alignItems: "center",
+              // justifyContent: "space-between",
+              width: "30%",
+              marginTop: "auto",
+            }}
+          ></Box>
         </Box>
       </Box>
     </Box>
