@@ -43,8 +43,8 @@ function Experience() {
             }}
           >
             JavaScript | TypeScript | React | React Native | AWS | Node.JS |
-            UX/UI | MongoDB | Express | <br /> Chakra UI | MUI | Scrum | Jira |
-            HTML | CSS | Figma | Mural
+            UX/UI | MongoDB | Express | <br /> GitHub | Chakra UI | MUI | Scrum
+            | Jira | HTML | CSS | Figma | Mural
           </Typography>
           <Box
             sx={{
