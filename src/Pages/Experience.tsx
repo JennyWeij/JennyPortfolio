@@ -42,8 +42,9 @@ function Experience() {
               mb: "15px",
             }}
           >
-            JavaScript | React | TypeScript | React Native | AWS | UX/UI | Scrum
-            | HTML | CSS | Figma | Mural
+            JavaScript | TypeScript | React | React Native | AWS | Node.JS |
+            UX/UI | MongoDB | Express | <br /> Chakra UI | MUI | Scrum | Jira |
+            HTML | CSS | Figma | Mural
           </Typography>
           <Box
             sx={{
