@@ -141,6 +141,7 @@ function AboutMe() {
                   href="https://www.linkedin.com/in/jenny-weijland-frontend/"
                   target="_blank"
                   sx={{
+                    ml: { xs: 0, sm: "5px" },
                     display: "inline-flex",
                     alignItems: "center",
                     "&:hover .MuiSvgIcon-root": {
@@ -164,6 +165,7 @@ function AboutMe() {
                   target="_blank"
                   sx={{
                     display: "inline-flex",
+                    ml: { xs: 0, sm: "5px" },
                     alignItems: "center",
                     "&:hover .MuiSvgIcon-root": {
                       transform: "scale(1.3)",
