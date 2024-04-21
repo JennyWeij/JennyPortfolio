@@ -140,6 +140,13 @@ function AboutMe() {
                   color="black"
                   href="https://www.linkedin.com/in/jenny-weijland-frontend/"
                   target="_blank"
+                  sx={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    "&:hover .MuiSvgIcon-root": {
+                      transform: "scale(1.5)",
+                    },
+                  }}
                 >
                   <LinkedInIcon /> LinkedIn |{" "}
                 </Link>
@@ -155,6 +162,13 @@ function AboutMe() {
                   color="black"
                   href="https://github.com/JennyWeij"
                   target="_blank"
+                  sx={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    "&:hover .MuiSvgIcon-root": {
+                      transform: "scale(1.3)",
+                    },
+                  }}
                 >
                   {" "}
                   <GitHubIcon /> GitHub

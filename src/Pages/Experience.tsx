@@ -33,7 +33,7 @@ function Experience() {
               fontStyle: "normal",
             }}
           >
-            TECHNICAL / <br /> WORK EXPERIENCE
+            TECHNICAL/ <br /> WORK EXPERIENCE
           </Typography>
           <Typography
             sx={{
