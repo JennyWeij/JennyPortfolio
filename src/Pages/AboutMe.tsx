@@ -62,7 +62,7 @@ function AboutMe() {
                 fontFamily: "Comfortaa, sans-serif",
                 fontWeight: "400",
                 mt: "20px",
-                mb: "40px",
+                mb: { xs: "15px", md: "40px" },
               }}
             >
               When asked whether this girl from Dalarna can handle stress,
@@ -141,7 +141,7 @@ function AboutMe() {
                   href="https://www.linkedin.com/in/jenny-weijland-frontend/"
                   target="_blank"
                   sx={{
-                    ml: { xs: 0, sm: "5px" },
+                    ml: { xs: "0px", md: "5px" },
                     display: "inline-flex",
                     alignItems: "center",
                     "&:hover .MuiSvgIcon-root": {
@@ -165,7 +165,7 @@ function AboutMe() {
                   target="_blank"
                   sx={{
                     display: "inline-flex",
-                    ml: { xs: 0, sm: "5px" },
+                    ml: { xs: "0px", md: "5px" },
                     alignItems: "center",
                     "&:hover .MuiSvgIcon-root": {
                       transform: "scale(1.3)",
@@ -187,8 +187,9 @@ function AboutMe() {
             justifyContent: "center",
             alignItems: "center",
             background: "#9998A0",
-            mt: { xs: "0px", md: "0" },
+            mt: { xs: "-25px", md: "0" },
             mr: { xs: "0px", md: "6%" },
+            mb: { xs: "25px", md: "40px" },
           }}
         >
           <Box
