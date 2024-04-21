@@ -70,6 +70,13 @@ body {
   background: #FFF;
   content: ' ';
 }
+
+@media screen and (max-width: 768px) {
+  #scroll-down::before {
+    height: 60px; 
+  }
+}
+
 @-webkit-keyframes elasticus {
   0% {
       -webkit-transform-origin: 0% 0%;

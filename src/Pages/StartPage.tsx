@@ -67,17 +67,6 @@ function StartPage() {
             >
               JENNY WEIJLAND
             </Typography>
-            {/* <Typography
-              sx={{
-                fontSize: { xs: "25px", md: "30px", lg: "40px" },
-                fontFamily: "Cormorant Garamond, serif",
-                fontWeight: "300",
-                fontStyle: "normal",
-              }}
-            >
-              Studying Front End Developer <br />
-              Graduating May 2024
-            </Typography> */}
             <Typography
               sx={{
                 fontSize: { xs: "13px", sm: "15px", md: "16px" },
