@@ -64,6 +64,15 @@ function Projects() {
     },
   ];
 
+  const internshipProject = {
+    title: "Novalo Academy",
+    description:
+      "On my second internship at Novalo Technologies me and two other interns created Novalo Academy. A learning platform where companies can sign up for different agile related courses. This project was created using AWS (Amplify, Lambda, DynamoDB, CloudWatch, S3, API Gateway and CloudFront), Python, JavaScript, React, TypeScript and MUI. Please click the icon below to try it out!",
+    imagePath: "/images/novalocourse.png",
+    when: "January 2024 - May 2024",
+    demoLink: "https://academy.novalo.se/",
+  };
+
   const handleCardHover = (title: string) => {
     setHoveredProject(title);
   };
@@ -72,12 +81,132 @@ function Projects() {
     setHoveredProject(null);
   };
 
-  return (
-    <Box
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const renderCard = (project: any) => (
+    <Card
       sx={{
-        position: "relative",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        transformStyle: "preserve-3d",
+        transition: "transform 1.5s",
+        transform:
+          hoveredProject === project.title ? "rotateY(180deg)" : "rotateY(0)",
       }}
+      onMouseEnter={() => handleCardHover(project.title)}
+      onMouseLeave={handleCardLeave}
     >
+      <CardContent
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-end",
+        }}
+      >
+        <img
+          src={project.imagePath}
+          alt={project.title}
+          style={{
+            maxWidth: "100%",
+            maxHeight: "400px",
+            width: "auto",
+            height: "auto",
+            margin: "10px auto",
+          }}
+        />
+        <Box
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "100%",
+            marginTop: "auto",
+          }}
+        >
+          <Typography
+            variant="h5"
+            mt="10px"
+            fontFamily="Cormorant Garamond, serif"
+            style={{ alignSelf: "flex-start" }}
+          >
+            {project.title}
+          </Typography>
+          <Box style={{ display: "flex", alignItems: "center" }}>
+            {project.demoLink && (
+              <a
+                href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginRight: "10px" }}
+              >
+                <PlayCircleIcon />
+              </a>
+            )}
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+            )}
+          </Box>
+        </Box>
+      </CardContent>
+
+      <CardContent
+        sx={{
+          backgroundColor: "#FAECE3",
+          transform: "rotateY(180deg)",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          maxWidth: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          visibility: hoveredProject === project.title ? "visible" : "hidden",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Comfortaa, sans-serif",
+            fontSize: { xs: "16px", md: "18px" },
+          }}
+        >
+          {project.description} <br />
+          <br />
+          {project.when} <br />
+          {project.demoLink && (
+            <a
+              href={project.demoLink}
+              target="_blank"
+              style={{ marginRight: "10px" }}
+              rel="noopener noreferrer"
+            >
+              <PlayCircleIcon />
+            </a>
+          )}
+          {project.githubLink && (
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon />
+            </a>
+          )}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+
+  return (
+    <Box sx={{ position: "relative" }}>
       <Box
         sx={{
           display: "flex",
@@ -113,129 +242,11 @@ function Projects() {
           <Grid container spacing={3}>
             {projects.map((project) => (
               <Grid item xs={12} sm={6} md={4} key={project.title}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    transformStyle: "preserve-3d",
-                    transition: "transform 1.5s",
-                    transform:
-                      hoveredProject === project.title
-                        ? "rotateY(180deg)"
-                        : "rotateY(0)",
-                  }}
-                  onMouseEnter={() => handleCardHover(project.title)}
-                  onMouseLeave={handleCardLeave}
-                >
-                  <CardContent
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "flex-end",
-                    }}
-                  >
-                    <img
-                      src={project.imagePath}
-                      alt={project.title}
-                      style={{
-                        maxWidth: "100%",
-                        maxHeight: "200px",
-                        width: "auto",
-                        height: "auto",
-                        margin: "10px auto",
-                      }}
-                    />
-                    <Box
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        width: "100%",
-                        marginTop: "auto",
-                      }}
-                    >
-                      <Typography
-                        variant="h5"
-                        mt="10px"
-                        fontFamily="Cormorant Garamond, serif"
-                        style={{ alignSelf: "flex-start" }}
-                      >
-                        {project.title}
-                      </Typography>
-                      <Box style={{ display: "flex", alignItems: "center" }}>
-                        {project.demoLink && (
-                          <a
-                            href={project.demoLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ marginRight: "10px" }}
-                          >
-                            <PlayCircleIcon />
-                          </a>
-                        )}
-                        <a
-                          href={project.githubLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <GitHubIcon />
-                        </a>
-                      </Box>
-                    </Box>
-                  </CardContent>
-
-                  {/* Backside of card */}
-                  <CardContent
-                    sx={{
-                      backgroundColor: "#FAECE3",
-                      transform: "rotateY(180deg)",
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      maxWidth: "100%",
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      visibility:
-                        hoveredProject === project.title ? "visible" : "hidden",
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontFamily: "Comfortaa, sans-serif",
-                        fontSize: { xs: "16px", md: "18px" },
-                      }}
-                    >
-                      {project.description} <br />
-                      <br />
-                      {project.when} <br />
-                      {project.demoLink && (
-                        <a
-                          href={project.demoLink}
-                          target="_blank"
-                          style={{ marginRight: "10px" }}
-                          rel="noopener noreferrer"
-                        >
-                          <PlayCircleIcon />
-                        </a>
-                      )}
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <GitHubIcon />
-                      </a>
-                    </Typography>
-                  </CardContent>
-                </Card>
+                {renderCard(project)}
               </Grid>
             ))}
           </Grid>
+
           <Typography
             sx={{
               fontSize: { xs: "50px", md: "100px" },
@@ -245,27 +256,16 @@ function Projects() {
               marginTop: "10px",
             }}
           >
-            INTERNSHIP PROJECTS
+            INTERNSHIP PROJECT
           </Typography>
 
-          <Typography
+          <Box
             sx={{
-              fontFamily: "Comfortaa, sans-serif",
-              fontSize: { xs: "16px", md: "25px" },
-              margin: "5px",
+              width: { xs: "100%", sm: "100%", md: "33.33%" },
             }}
           >
-            Coming soon
-          </Typography>
-          <Box
-            style={{
-              display: "flex",
-              alignItems: "center",
-              // justifyContent: "space-between",
-              width: "30%",
-              marginTop: "auto",
-            }}
-          ></Box>
+            {renderCard(internshipProject)}
+          </Box>
         </Box>
       </Box>
     </Box>
