@@ -140,7 +140,7 @@ function Projects() {
                 rel="noopener noreferrer"
                 style={{ marginRight: "10px" }}
               >
-                <PlayCircleIcon />
+                <PlayCircleIcon sx={{ color: "black" }} />
               </a>
             )}
             {project.githubLink && (
@@ -149,7 +149,7 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GitHubIcon />
+                <GitHubIcon sx={{ color: "black !important" }} />
               </a>
             )}
           </Box>
@@ -188,7 +188,7 @@ function Projects() {
               style={{ marginRight: "10px" }}
               rel="noopener noreferrer"
             >
-              <PlayCircleIcon />
+              <PlayCircleIcon sx={{ color: "black" }} />
             </a>
           )}
           {project.githubLink && (
@@ -197,7 +197,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubIcon />
+              <GitHubIcon sx={{ color: "black" }} />
             </a>
           )}
         </Typography>
