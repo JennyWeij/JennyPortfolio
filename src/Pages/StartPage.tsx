@@ -23,6 +23,7 @@ function StartPage() {
         position: "fixed",
         top: 0,
         left: 0,
+        width: "100vw",
         background: "#2E2C31",
       }}
     >
@@ -30,7 +31,7 @@ function StartPage() {
         sx={{
           background: "#2E2C31",
           ml: "5%",
-          maxWidth: "90%",
+          maxWidth: "100vw",
           display: "flex",
           justifyContent: "center", // Center horizontally
           alignItems: { xs: "flex-start", sm: "flex-start", md: "center" }, // Center vertically
