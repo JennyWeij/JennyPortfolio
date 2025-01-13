@@ -67,7 +67,12 @@ function AboutMe() {
             >
               When asked whether this girl from Dalarna can handle stress,
               different types of people, other people's stress, structure, plan
-              and carry out tasks, the answer is a clear YES. <br />
+              and carry out tasks, the answer is a clear YES.
+              My role as an administrator at Chalmers University of Technology has given me valuable insight
+              into the importance of working within an organization that contributes to the development of
+              society. Being part of an organization with a clear societal purpose has inspired me to continue
+              working in a place where I can make a difference.
+              <br /><br />
               My varied work experiences, particularly in the service industry,
               have equipped me with many adaptable skills.
               <br /> I am passionate about technology and its potential to drive

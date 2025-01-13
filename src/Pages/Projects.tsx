@@ -73,6 +73,14 @@ function Projects() {
     demoLink: "https://academy.novalo.se/",
   };
 
+  const personalProject = {
+    title: "Matchanalys",
+    description:
+      "Together with Madeleine Gustafsson, I have developed a web application where you can enter data and analyze events in a floorball game. The project has been used by Svenska Innebandyförbundet to analyze games in the 2024 Men's World Floorball Championship. For more information on this project, please contact me.",
+    imagePath: "/images/matchanalys.png",
+    when: "June 2024 - ongoing",
+  };
+
   const handleCardHover = (title: string) => {
     setHoveredProject(title);
   };
@@ -228,24 +236,26 @@ function Projects() {
             padding: "20px",
           }}
         >
+
           <Typography
             sx={{
-              fontSize: { xs: "60px", md: "100px" },
+              fontSize: { xs: "50px", md: "100px" },
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: "300",
               fontStyle: "normal",
+              marginTop: "10px",
             }}
           >
-            PROJECTS
+            PERSONAL PROJECT
           </Typography>
-
-          <Grid container spacing={3}>
-            {projects.map((project) => (
-              <Grid item xs={12} sm={6} md={4} key={project.title}>
-                {renderCard(project)}
-              </Grid>
-            ))}
-          </Grid>
+  
+          <Box
+            sx={{
+              width: { xs: "100%", sm: "100%", md: "33.33%" },
+            }}
+          >
+            {renderCard(personalProject)}
+          </Box>
 
           <Typography
             sx={{
@@ -258,7 +268,7 @@ function Projects() {
           >
             INTERNSHIP PROJECT
           </Typography>
-
+  
           <Box
             sx={{
               width: { xs: "100%", sm: "100%", md: "33.33%" },
@@ -266,6 +276,25 @@ function Projects() {
           >
             {renderCard(internshipProject)}
           </Box>
+          <Typography
+            sx={{
+              fontSize: { xs: "60px", md: "100px" },
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: "300",
+              fontStyle: "normal",
+            }}
+          >
+           SCHOOL PROJECTS
+          </Typography>
+
+          <Grid container spacing={3}>
+            {projects.map((project) => (
+              <Grid item xs={12} sm={6} md={4} key={project.title}>
+                {renderCard(project)}
+              </Grid>
+            ))}
+          </Grid>
+
         </Box>
       </Box>
     </Box>
