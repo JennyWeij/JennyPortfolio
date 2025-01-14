@@ -42,8 +42,8 @@ function Experience() {
               mb: "15px",
             }}
           >
-            JavaScript | TypeScript | React | React Native | AWS | Node.JS | Next.js | 
-            UX/UI | MongoDB | Express | <br /> GitHub | Chakra UI | MUI | Scrum
+            JavaScript | TypeScript | React | React Native | AWS | Node.js | Next.js | 
+            UX/UI | MongoDB | Mongoose | <br /> GitHub | | MUI | Scrum
             | Jira | HTML | CSS | Figma | Mural
           </Typography>
           <Box
