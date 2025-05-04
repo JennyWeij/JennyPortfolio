@@ -66,7 +66,7 @@ function AboutMe() {
               }}
             >
               When asked whether this girl from Dalarna can handle stress,
-              different types of people, other people's stress, structure, plan
+              different types of people, other people's stress, work independently as well as collaboratively, structure, plan
               and carry out tasks, the answer is a clear YES.
               My role as an administrator at Chalmers University of Technology has given me valuable insight
               into the importance of working within an organization that contributes to the development of
