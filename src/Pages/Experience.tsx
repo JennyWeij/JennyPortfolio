@@ -43,7 +43,7 @@ function Experience() {
             }}
           >
             JavaScript | TypeScript | React | React Native | AWS | Node.js | Next.js | 
-            UX/UI | MongoDB | Mongoose | <br /> GitHub | | MUI | Scrum
+            UX/UI | MongoDB | Mongoose | <br /> GitHub | MUI | Scrum
             | Jira | HTML | CSS | Figma | Mural
           </Typography>
           <Box
@@ -128,7 +128,7 @@ function Experience() {
               fontWeight: "400",
             }}
           >
-            I have worked as an administrative assistans at Chalmers University
+            My work experience include working as a administrative assistant at Chalmers University
             of Technology, a Sales Coordinator at Hasselblad
             <br /> and a project manager at Film i Dalarna. These employments
             have given me valuable people skills and a great understanding for
